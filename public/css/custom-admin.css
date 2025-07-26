@@ -1,0 +1,34 @@
+.navbar .navbar-brand-wrapper .navbar-brand img {
+    height: 60px !important;
+    width: auto;
+}
+
+.btn-edit-custom {
+    background-color: #0a2342 !important; /* dark blue */
+    color: #fff !important;
+    border: none;
+}
+.btn-edit-custom:hover, .btn-edit-custom:focus {
+    background-color: #163d66 !important;
+    color: #fff !important;
+}
+
+.btn-add-category {
+    background-color: #2b9bcf !important; /* light blue */
+    color: #fff !important;
+    border: none;
+}
+.btn-add-category:hover, .btn-add-category:focus {
+    background-color: #1769aa !important;
+    color: #fff !important;
+}
+
+.btn-delete-custom {
+    background-color: #e53935 !important; /* red */
+    color: #fff !important;
+    border: none;
+}
+.btn-delete-custom:hover, .btn-delete-custom:focus {
+    background-color: #b71c1c !important;
+    color: #fff !important;
+}
