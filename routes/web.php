@@ -1,5 +1,7 @@
 <?php
-
+use App\Http\Controllers\FrontLoginController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\CryptoIdeaController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\NotificationController;
@@ -18,10 +20,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Default welcome route
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+
+// Frontend login routes (user)
+Route::get('/user-login', [FrontLoginController::class, 'showLoginForm'])->name('user.login');
+Route::post('/user-login', [FrontLoginController::class, 'login'])->name('user.login.submit');
+Route::post('/user-logout', [FrontLoginController::class, 'logout'])->name('user.logout');
+
+// Contact page routes
+Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 // Admin routes
 Route::get('admin/login', [LoginController::class, 'login'])->name('login');

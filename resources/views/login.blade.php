@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>CelestialUI Admin</title>
+  <title>Invexo Admin</title>
   <!-- base:css -->
   <link rel="stylesheet" href="{{ asset('vendors/typicons.font/font/typicons.css') }}">
   <link rel="stylesheet" href="{{ asset('vendors/css/vendor.bundle.base.css') }}">
@@ -13,7 +13,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="{{ asset('css/vertical-layout-light/style.css') }}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
+  <link rel="shortcut icon" href="{{ asset('images/favicon.jpg') }}" />
 </head>
 
 <body>
@@ -23,8 +23,8 @@
         <div class="row w-100 mx-0">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <div class="brand-logo">
-                <img src="{{ asset('images/logo.svg') }}" alt="logo">
+              <div class="brand-logo d-flex justify-content-center">
+                <img src="{{ asset('images/logo.jpg') }}" alt="logo">
               </div>
               
               @if(session('message'))
@@ -41,7 +41,7 @@
                   <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                 </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN IN</button>
+                  <button type="submit" class="btn btn-block btn-lg font-weight-medium auth-form-btn" style="background: linear-gradient(135deg, #66f1e0 0%, #3fabde 100%); color: #000; border: none;">SIGN IN</button>
                 </div>
               </form>
             </div>
