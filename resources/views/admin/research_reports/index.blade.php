@@ -31,8 +31,9 @@
                       </thead>
                       <tbody>
                         @forelse($reports as $report)
+                          @php $loopIndex = $loop->iteration; @endphp
                           <tr>
-                            <td>{{ $report->id }}</td>
+                            <td>{{ $loopIndex }}</td>
                             <td>{{ $report->name }}</td>
                             <td>{{ $report->categoryRelation->name ?? '' }}</td>
                             <td>

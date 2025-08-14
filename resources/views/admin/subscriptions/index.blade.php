@@ -30,8 +30,9 @@
                       </thead>
                       <tbody>
                         @forelse($subscriptions as $subscription)
+                          @php $loopIndex = $loop->iteration; @endphp
                           <tr>
-                            <td>{{ $subscription->id }}</td>
+                            <td>{{ $loopIndex }}</td>
                             <td>{{ $subscription->name }}</td>
                             <td>{{ $subscription->price }}</td>
                             <td>{{ $subscription->duration }}</td>

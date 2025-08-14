@@ -32,8 +32,9 @@
                       </thead>
                       <tbody>
                         @forelse($users as $user)
+                          @php $loopIndex = $loop->iteration; @endphp
                           <tr>
-                            <td>{{ $user->id }}</td>
+                            <td>{{ $loopIndex }}</td>
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->subscription_type }}</td>

@@ -30,8 +30,9 @@
                       </thead>
                       <tbody>
                         @forelse($notifications as $notification)
+                          @php $loopIndex = $loop->iteration; @endphp
                           <tr>
-                            <td>{{ $notification->id }}</td>
+                            <td>{{ $loopIndex }}</td>
                             <td>{{ $notification->title }}</td>
                             <td>{{ $notification->message }}</td>
                             <td>{{ $notification->status ? 'Active' : 'Inactive' }}</td>

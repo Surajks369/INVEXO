@@ -30,8 +30,9 @@
                       </thead>
                       <tbody>
                         @forelse($ideas as $idea)
+                          @php $loopIndex = $loop->iteration; @endphp
                           <tr>
-                            <td>{{ $idea->id }}</td>
+                            <td>{{ $loopIndex }}</td>
                             <td>{{ $idea->name }}</td>
                             <td>{{ $idea->current_price }}</td>
                             <td>{{ ucfirst($idea->risk_level) }}</td>

@@ -40,8 +40,9 @@
                       </thead>
                       <tbody>
                         @forelse($categories as $category)
+                          @php $loopIndex = $loop->iteration; @endphp
                           <tr>
-                            <td>{{ $category->id }}</td>
+                            <td>{{ $loopIndex }}</td>
                             <td>{{ $category->name }}</td>
                             <td>{{ $category->created_at->format('Y-m-d') }}</td>
                             <td>

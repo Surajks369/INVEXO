@@ -35,6 +35,7 @@
                     <div class="form-group mb-3">
                       <label>Password (leave blank to keep current)</label>
                       <input type="password" name="password" class="form-control">
+                        <small class="form-text text-muted">Password must be at least 6 characters.</small>
                     </div>
                     <div class="form-group mb-3">
                       <label>Confirm Password</label>
