@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         NotificationSeeder::class,
         ResearchReportSeeder::class,
         SubscriptionSeeder::class,
-        UserSeeder::class,
+        UserSeeder::class // <-- no comma here
     ]);
     }
 }
