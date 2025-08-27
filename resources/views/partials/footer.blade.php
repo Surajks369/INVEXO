@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="footer-lower">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo.jpeg" alt="" style="height:50px;"></a></figure>
                                 <ul class="footer-card clearfix">
                                     <li><h4>We Accept:</h4></li>
                                     <li><a href="index.html"><img src="assets/images/icons/card-1.png" alt=""></a></li>

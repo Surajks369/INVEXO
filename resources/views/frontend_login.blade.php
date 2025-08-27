@@ -55,22 +55,39 @@
                     </ul>
                 </div>
             @endif
-            <form method="POST" action="{{ route('user.login.submit') }}" id="login-form">
-                @csrf
-                <div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                        <label>Email Address <span>*</span></label>
-                        <input type="email" name="email" placeholder="" required value="{{ old('email') }}">
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                        <label>Password <span>*</span></label>
-                        <input type="password" name="password" placeholder="" required>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn pt_18">
-                        <button type="submit" class="theme-btn btn-one" name="submit-form">Login</button>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="login-card">
+                        <div class="login-header text-center">
+                            <h2>Welcome Back</h2>
+                            <p>Please sign in to your account</p>
+                        </div>
+                        <form method="POST" action="{{ route('user.login.submit') }}" id="login-form" class="login-form">
+                            @csrf
+                            <div class="form-group">
+                                <label>Email Address <span>*</span></label>
+                                <div class="input-group">
+                                    <span class="input-icon"><i class="flaticon-mail"></i></span>
+                                    <input type="email" name="email" placeholder="Enter your email address" required value="{{ old('email') }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Password <span>*</span></label>
+                                <div class="input-group">
+                                    <span class="input-icon"><i class="flaticon-lock"></i></span>
+                                    <input type="password" name="password" placeholder="Enter your password" required>
+                                </div>
+                            </div>
+                            <div class="form-group message-btn">
+                                <button type="submit" class="theme-btn btn-one">
+                                    <span>Sign In</span>
+                                    <i class="flaticon-right-arrow"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </section>

@@ -27,6 +27,8 @@
 <link href="{{ asset('assets/css/color.css') }}" id="jssDefault" rel="stylesheet">
 <link href="{{ asset('assets/css/rtl.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/login-custom.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/dashboard-custom.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/header.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/page-title.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/contact.css') }}" rel="stylesheet">
@@ -90,7 +92,7 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box">
-                    <figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('images/logo.jpg') }}" alt="" style="height:50px;width:100px;"></a></figure>
+                    <figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('images/logo.jpeg') }}" alt="" style="height:50px;width:100px;"></a></figure>
                     <div class="close-search"><i class="fal fa-times"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
@@ -144,7 +146,7 @@
             <div class="header-lower">
                 <div class="outer-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('images/logo.jpg') }}" alt="" style="height:50px;width:100px;"></a></figure>
+                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('images/logo.jpeg') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <!--Mobile Navigation Toggler-->
                             <div class="mobile-nav-toggler">
@@ -155,54 +157,16 @@
                             <nav class="main-menu navbar-expand-md navbar-light clearfix">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class="dropdown"><a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-3.html">Home Three</a></li>
-                                                <li><a href="index-4.html">Home Four</a></li>
-                                                <li><a href="index-5.html">Home Five</a></li>
-                                            </ul>
+                                        <li class="dropdown"><a href="/">Home</a>
+                                            
                                         </li> 
-                                        <li class="dropdown"><a href="index.html">Trading</a>
-                                            <ul>
-                                                <li><a href="platform.html">Platform</a></li>
-                                                <li><a href="account.html">Account</a></li>
-                                                <li><a href="account-details.html">Account Deatils</a></li>
-                                            </ul>
-                                        </li> 
-                                        <li class="dropdown"><a href="index.html">Market</a>
-                                            <ul>
-                                                <li><a href="markets.html">Markets Place</a></li>
-                                                <li><a href="markets-details.html">Markets Details</a></li>
-                                            </ul>
+                                        
+                                        <li class="dropdown"><a href="{{ route('about') }}">About Us</a>
+                                            
                                         </li>
-                                        <li class="dropdown"><a href="index.html">About Us</a>
-                                            <ul>
-                                                <li class="dropdown"><a href="index.html">Education</a>
-                                                    <ul>
-                                                        <li><a href="education.html">Education</a></li>
-                                                        <li><a href="education-details.html">Book Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown"><a href="index.html">Team</a>
-                                                    <ul>
-                                                        <li><a href="team.html">Our Expert Team</a></li>
-                                                        <li><a href="team-details.html">Team Deatils</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="faq.html">FAQ's</a></li>
-                                                <li><a href="error.html">404</a></li>
-                                            </ul>
-                                        </li> 
-                                        <li class="dropdown"><a href="index.html">Blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">Blog Grid</a></li>
-                                                <li><a href="blog-2.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>  
+                                        <li><a href="{{ route('services') }}">Services</a></li>
+                                        <li><a href="{{ route('pricing') }}">Pricing</a></li> 
+                                        
                                         <li class="current"><a href="contact.html">Contact</a></li> 
                                     </ul>
                                 </div>
@@ -220,7 +184,7 @@
             <div class="sticky-header">
                 <div class="large-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a></figure>
+                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logo.jpeg') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <nav class="main-menu clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->

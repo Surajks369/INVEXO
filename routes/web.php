@@ -21,11 +21,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+Route::get('/pricing', function () {
+    return view('pricing');
+})->name('pricing');
 
 // Frontend login routes (user)
 Route::get('/user-login', [FrontLoginController::class, 'showLoginForm'])->name('user.login');
 Route::post('/user-login', [FrontLoginController::class, 'login'])->name('user.login.submit');
 Route::post('/user-logout', [FrontLoginController::class, 'logout'])->name('user.logout');
+
+// Protected user routes
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [FrontLoginController::class, 'dashboard'])->name('user.dashboard');
+    Route::get('/research-report/{id}', [App\Http\Controllers\ResearchReportController::class, 'show'])->name('research.report.detail');
+});
 
 // Contact page routes
 Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');

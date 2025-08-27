@@ -76,7 +76,7 @@
             <div class="sticky-header">
                 <div class="large-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                        <figure class="logo-box"><a href="index.html"><img src="assets/images/logo.jpeg" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <nav class="main-menu clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->
@@ -126,30 +126,33 @@
                     <div class="slide-item p_relative">
 <div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-1.jpg') }});"></div>
                         <div class="content-box">
-                            <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                            <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
+                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Create Account</a>
+                                <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
+                                <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="slide-item p_relative">
 <div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-2.jpg') }});"></div>
                         <div class="content-box">
-                            <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                            <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
+                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Create Account</a>
+                                <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
+                                <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="slide-item p_relative">
 <div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-3.jpg') }});"></div>
                         <div class="content-box">
-                            <h2>Trading for Anyone. Anywhere. Anytime.</h2>
-                            <p>Trade over 1000 Instruments. Forex, CFDs on Stock Indices, Commodities, Stocks, Metals and Energies.</p>
+                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
+                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Create Account</a>
+                                <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
+                                <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +163,7 @@
 
 
         <!-- clients-section -->
-        <section class="clients-section pt_40 pb_40">
+        {{--<section class="clients-section pt_40 pb_40">
             <div class="large-container">
                 <ul class="clients-list">
 <li><a href="index.html"><img src="{{ asset('assets/images/clients/clients-1.png') }}" alt=""></a></li>
@@ -172,59 +175,67 @@
 <li><a href="index.html"><img src="{{ asset('assets/images/clients/clients-7.png') }}" alt=""></a></li>
                 </ul>
             </div>
-        </section>
+        </section>--}}
         <!-- clients-section end -->
 
 
-        <!-- account-section -->
+        <!-- services-section -->
         <section class="account-section pt_100 pb_70">
 <div class="pattern-layer" style="background-image: url({{ asset('assets/images/shape/shape-1.png') }});"></div>
             <div class="auto-container">
                 <div class="sec-title pb_60 centred">
-                    <span class="sub-title mb_14">Account</span>
-                    <h2>Trading Accounts</h2>
+                    <span class="sub-title mb_14">Our Services</span>
+                    <h2>What We Offer</h2>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-3 col-md-6 col-sm-12 account-block">
                         <div class="account-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <div class="icon-box"><i class="icon-01"></i></div>
-                                <h3><a href="account-details.html">Professional Account</a></h3>
-                                <p>Traders with professional accounts gain access to a wide range of benefits, including enhanced trading platforms</p>
+                                <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
+                                    <i class="fas fa-chart-line" style="font-size: 36px; color: #fff;"></i>
+                                </div>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Swing Trading Advisory</a></h3>
+                                <p style="color:#333;">Timed buy/sell recommendations for short- to medium-term opportunities. Get precise entry and exit points for optimal trading results.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 account-block">
                         <div class="account-block-one wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <div class="icon-box"><i class="icon-02"></i></div>
-                                <h3><a href="account-details.html">Overview Account</a></h3>
-                                <p>The primary feature of a trading overview account is its ability to aggregate information from multiple accounts and</p>
+                                <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
+                                    <i class="fab fa-bitcoin" style="font-size: 36px; color: #fff;"></i>
+                                </div>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Crypto Insights</a></h3>
+                                <p style="color:#333;">Swing and long-hold signals for Bitcoin, Ethereum, and major altcoins. Navigate the crypto market with confidence and expert guidance.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 account-block">
                         <div class="account-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <div class="icon-box"><i class="icon-03"></i></div>
-                                <h3><a href="account-details.html">Demo Account</a></h3>
-                                <p>Trading demo accounts are particularly valuable for novice traders who are new to the world of investing.</p>
+                                <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
+                                    <i class="fas fa-bell" style="font-size: 36px; color: #fff;"></i>
+                                </div>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Real-Time Alerts</a></h3>
+                                <p style="color:#333;">Get notified instantly when opportunities arise. Never miss a profitable trade with our timely alert system delivered to your device.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 account-block">
                         <div class="account-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <div class="icon-box"><i class="icon-04"></i></div>
-                                <h3><a href="account-details.html">Islamic Account</a></h3>
-                                <p>Islamic accounts also adhere to ethical guidelines that prohibit trading certain financial instruments deemed</p>
+                                <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
+                                    <i class="fas fa-shield-alt" style="font-size: 36px; color: #fff;"></i>
+                                </div>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Trusted Research</a></h3>
+                                <p style="color:#333;">Transparent, research-backed, unbiased analysis. Our recommendations are based on thorough market research and proven strategies.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- account-section -->
+        <!-- services-section -->
 
 
         <!-- about-section -->

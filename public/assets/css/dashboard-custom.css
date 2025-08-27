@@ -1,0 +1,518 @@
+/* User Dashboard Styles */
+
+/* Header logout button styling */
+.theme-btn button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.welcome-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #66f1e0 0%, #3fabde 100%);
+}
+
+.welcome-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.welcome-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.welcome-content p {
+    margin-bottom: 5px;
+    color: #6b7280;
+}
+
+.subscription-type {
+    color: #3fabde;
+    font-weight: 600;
+}
+
+.renewal-date {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.expired-message {
+    color: #ef4444 !important;
+    font-weight: 600;
+}
+
+.logout-btn {
+    margin-left: auto;
+}
+
+.btn-logout {
+    background: #ef4444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* Report Cards */
+.report-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.report-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #66f1e0 0%, #3fabde 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.report-icon i {
+    font-size: 24px;
+    color: #000;
+}
+
+.report-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.report-date,
+.report-category {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.report-btn {
+    margin-top: 20px;
+}
+
+/* Subscription Cards */
+.subscription-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+}
+
+.subscription-card.featured {
+    border-color: #3fabde;
+    transform: scale(1.05);
+}
+
+.subscription-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.subscription-card.featured:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #66f1e0 0%, #3fabde 100%);
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.subscription-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subscription-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+}
+
+.currency {
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.amount {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3fabde;
+}
+
+.period {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+.subscription-features ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.subscription-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #374151;
+}
+
+.subscription-features i.flaticon-check {
+    color: #10b981;
+}
+
+.subscription-features i.flaticon-cross {
+    color: #ef4444;
+}
+
+/* Report Detail Styles */
+.back-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #3fabde;
+}
+
+.report-detail-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.report-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.report-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.report-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.report-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.report-content h4:first-child {
+    margin-top: 0;
+}
+
+.file-download {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.file-icon {
+    width: 50px;
+    height: 50px;
+    background: #ef4444;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-icon i {
+    font-size: 20px;
+    color: white;
+}
+
+.file-info h5 {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+
+.file-info p {
+    color: #6b7280;
+    font-size: 14px;
+    margin: 0;
+}
+
+.highlights-list {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+.highlights-list i {
+    color: #10b981;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    padding-left: 20px;
+}
+
+.user-info-card,
+.related-reports {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.user-info-card h4,
+.related-reports h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.subscription-info p {
+    margin-bottom: 8px;
+    color: #6b7280;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.status-badge.active {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.related-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.related-item:last-child {
+    border-bottom: none;
+}
+
+.related-item h6 {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.related-item p {
+    color: #6b7280;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.related-item a {
+    color: #3fabde;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.related-item a:hover {
+    text-decoration: underline;
+}
+
+/* No Content Styles */
+.no-reports,
+.no-plans {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.no-reports-icon,
+.no-plans-icon {
+    width: 80px;
+    height: 80px;
+    background: #f3f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.no-reports-icon i,
+.no-plans-icon i {
+    font-size: 30px;
+    color: #9ca3af;
+}
+
+.no-reports h3,
+.no-plans h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.no-reports p,
+.no-plans p {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .logout-btn {
+        margin-left: 0;
+    }
+    
+    .welcome-content h2 {
+        font-size: 24px;
+    }
+    
+    .subscription-card.featured {
+        transform: none;
+    }
+    
+    .subscription-card.featured:hover {
+        transform: translateY(-5px);
+    }
+    
+    .report-detail-card {
+        padding: 25px;
+    }
+    
+    .sidebar {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    
+    .back-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .file-download {
+        flex-direction: column;
+        text-align: center;
+    }
+}

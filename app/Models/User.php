@@ -44,5 +44,7 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'join_date' => 'date',
+        'renewal_date' => 'date',
     ];
 }
