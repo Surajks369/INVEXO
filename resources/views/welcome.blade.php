@@ -124,7 +124,7 @@
             <div class="large-container">
                 <div class="banner-carousel owl-theme owl-carousel owl-nav-none">
                     <div class="slide-item p_relative">
-<div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-1.jpg') }});"></div>
+<div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-1.png') }});"></div>
                         <div class="content-box">
                             <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
                             <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     <div class="slide-item p_relative">
-<div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-2.jpg') }});"></div>
+<div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-2.png') }});"></div>
                         <div class="content-box">
                             <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
                             <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
@@ -146,7 +146,18 @@
                         </div>
                     </div>
                     <div class="slide-item p_relative">
-<div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-3.jpg') }});"></div>
+<div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-3.png') }});"></div>
+                        <div class="content-box">
+                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
+                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
+                            <div class="btn-box">
+                                <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
+                                <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item p_relative">
+<div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-4.png') }});"></div>
                         <div class="content-box">
                             <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
                             <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
@@ -195,7 +206,9 @@
                                     <i class="fas fa-chart-line" style="font-size: 36px; color: #fff;"></i>
                                 </div>
                                 <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Swing Trading Advisory</a></h3>
-                                <p style="color:#333;">Timed buy/sell recommendations for short- to medium-term opportunities. Get precise entry and exit points for optimal trading results.</p>
+                                <p style="color:#333;">
+                                    Timed buy/sell recommendations for short- to medium-term opportunities. Get precise entry and exit points for optimal trading results.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -257,7 +270,20 @@
                                         </div>
                                         <div class="acc-content current">
                                             <div class="content">
-                                                <p>As a brokerage firm or trading platform. We are dedicated to providing innovative and user-friendly trading</p>
+                                                <p>
+                                                    At Invexo, we are passionate about empowering individuals to grow their wealth with confidence.</p>
+&nbsp;<p>Founded with the vision of making smart investing simple and accessible, Invexo is a modern investment advisory platform that provides research-driven insights, strategies, and tools tailored for today’s dynamic stock market.</p>
+&nbsp;
+<p>Our focus is on swing trading opportunities, where precision, timing, and disciplined strategies matter the most. With a blend of market expertise, advanced analytics, and a client-first approach, we guide our subscribers toward making informed decisions and maximizing their returns.</p>
+&nbsp;
+<p>At Invexo, we believe investing is not just about numbers—it’s about building trust, achieving financial freedom, and creating long-term value for our clients.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>Our Mission</strong></p>
+<p>To simplify stock market investing and deliver actionable strategies that help individuals confidently grow their portfolios.</p>
+&nbsp;
+<p style="color: #28a745;"><strong> Our Vision</strong></p>
+<p>To be the most trusted partner for retail investors by combining technology, knowledge, and transparency in every step of the investment journey.</p>
+                                                </p>
                                             </div>
                                         </div>
                                     </li>
@@ -268,7 +294,28 @@
                                         </div>
                                         <div class="acc-content">
                                             <div class="content">
-                                                <p>As a brokerage firm or trading platform. We are dedicated to providing innovative and user-friendly trading</p>
+                                                <p>
+                                                    At Invexo, we specialize in guiding investors through the fast-moving world of the stock market with clarity and confidence.</p>
+&nbsp;<p>Our core expertise lies in swing trading strategies, where we identify short-to-medium-term opportunities that balance risk and reward.</p>
+&nbsp;
+<p><h4>Here’s how we help our clients</h4></p>
+
+<p style="color: #28a745;"><strong>Market Research & Insights</strong>></p>
+<p>We provide clear, research-backed analysis of market trends, sectors, and stocks with the highest potential.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>Actionable Swing Trading Strategies</strong></p>
+<p>Our team identifies entry and exit points designed to maximize gains and minimize risks.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>Easy-to-Follow Advisory Plans</strong></p>
+<p>We offer subscription-based investment advice that is simple, practical, and tailored for both beginners and experienced investors.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>Education & Guidance</strong></p>
+<p>We don’t just give recommendations — we empower our clients with the knowledge to understand the why behind each trade.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>Trust & Transparency</strong></p>
+<p>Every recommendation is backed by data-driven insights, ensuring full transparency in our approach.</p>
+&nbsp;
+<p>At Invexo, our mission is to make investing smarter, simpler, and more rewarding — helping you take confident steps toward your financial goals.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -279,7 +326,23 @@
                                         </div>
                                         <div class="acc-content">
                                             <div class="content">
-                                                <p>As a brokerage firm or trading platform. We are dedicated to providing innovative and user-friendly trading</p>
+                                                <p>
+                                                    We’ve designed Invexo to be simple, transparent, and effective — so you can focus on growing your wealth without confusion.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>1. Subscribe to a Plan</strong></p>
+<p>Choose the subscription that fits your investing style. Whether you’re just starting or already experienced, we have plans tailored for you.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>2. Get Market Insights & Alerts</strong></p>
+<p>Receive our expert swing trading recommendations directly — complete with stock picks, entry/exit levels, and market updates.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>3. Take Action with Confidence</strong></p>
+<p>Use our clear strategies to make informed decisions. Each recommendation is backed by research and risk management principles.</p>
+&nbsp;
+<p style="color: #28a745;"><strong>4. Track & Grow</strong></p>
+<p>Monitor your trades and see your portfolio grow with consistent, disciplined guidance.</p>
+&nbsp;
+<p>At Invexo, we combine market expertise + data-driven strategies + transparency to make investing easier and more effective for you.</p>
+                                                </p>
                                             </div>
                                         </div>
                                     </li>
@@ -308,44 +371,7 @@
 
 
         <!-- funfact-section -->
-        <section class="funfact-section">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="row clearfix">
-                        <div class="col-lg-4 col-md-6 col-sm-12 funfact-block">
-                            <div class="funfact-block-one">
-                                <div class="inner-box">
-                                    <div class="count-outer">
-                                        <span class="odometer" data-count="150">00</span>+<span class="text">Countries</span>
-                                    </div>
-                                    <p>Trade policies and agreements shape the trading landscape of countries</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 funfact-block">
-                            <div class="funfact-block-one">
-                                <div class="inner-box">
-                                    <div class="count-outer">
-                                        <span class="odometer" data-count="40">00</span>+<span class="text">Million Invest</span>
-                                    </div>
-                                    <p>Investing a million dollars in trading represents a significant opportunity and</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 funfact-block">
-                            <div class="funfact-block-one">
-                                <div class="inner-box">
-                                    <div class="count-outer">
-                                        <span class="odometer" data-count="90">00</span>+<span class="text">Awards</span>
-                                    </div>
-                                    <p>Trading awards recognize excellence and achievement within the financial</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- funfact-section end -->
 
 
@@ -360,41 +386,41 @@
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/trading-1.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Crypto Trading</a></h3>
-                            <p>One of the primary methods of gold trading is through the spot</p>
-                            <div class="btn-box"><a href="markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <h3><a href="markets-details.html">Stock Market</a></h3>
+                            <p style="color: #28a745;">Trading stocks of Indian companies on exchanges.</p>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/trading-2.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Shares Trading</a></h3>
-                            <p>One of the primary methods of gold trading is through the spot</p>
-                            <div class="btn-box"><a href="markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <h3><a href="markets-details.html">Trade Advide</a></h3>
+                            <p style="color: #28a745;">Helping investors profit from short-term market fluctuations.</p>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/trading-3.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Gold Trading</a></h3>
-                            <p>One of the primary methods of gold trading is through the spot</p>
-                            <div class="btn-box"><a href="markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <h3><a href="markets-details.html">BitCoin</a></h3>
+                            <p style="color: #28a745;">Making short-term profits from Bitcoin's price fluctuations.</p>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/trading-4.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Currency Trading</a></h3>
-                            <p>One of the primary methods of gold trading is through the spot</p>
-                            <div class="btn-box"><a href="markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <h3><a href="markets-details.html">Real Time Alert</a></h3>
+                            <p style="color: #28a745;" >Immediate notifications on key stock market events.</p>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/trading-5.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Silver Trading</a></h3>
-                            <p>One of the primary methods of gold trading is through the spot</p>
-                            <div class="btn-box"><a href="markets-details.html" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <h3><a href="markets-details.html">Stock Advice</a></h3>
+                            <p style="color: #28a745;">Expert guidance for smarter investment decisions.</p>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
                         </div>
                     </div>
                 </div>
@@ -2084,82 +2110,12 @@
 
 
         <!-- award-section -->
-        <section class="award-section pt_100 pb_100">
-            <div class="auto-container">
-                <div class="sec-title centred pb_60">
-                    <span class="sub-title mb_14">AWARDED BY THE BEST</span>
-                    <h2>Globally Awarded</h2>
-                </div>
-                <div class="table-outer">
-                    <table class="award-table">
-                        <tbody>
-                            <tr>
-                                <td>01</td>
-                                <td><h3><a href="index.html">The Best Trading Platform, UK</a></h3></td>
-                                <td><span>x1</span></td>
-                                <td><figure class="image-box"><a href="index.html"><img src="assets/images/icons/award-1.png" alt=""></a></figure></td>
-                                <td>2023</td>
-                            </tr>
-                            <tr>
-                                <td>02</td>
-                                <td><h3><a href="index.html">Awards Interior Excellence</a></h3></td>
-                                <td><span>x3</span></td>
-                                <td><figure class="image-box"><a href="index.html"><img src="assets/images/icons/award-2.png" alt=""></a></figure></td>
-                                <td>2017</td>
-                            </tr>
-                            <tr>
-                                <td>03</td>
-                                <td><h3><a href="index.html">The Best Trading Platform, UK</a></h3></td>
-                                <td><span>x4</span></td>
-                                <td><figure class="image-box"><a href="index.html"><img src="assets/images/icons/award-3.png" alt=""></a></figure></td>
-                                <td>2022</td>
-                            </tr>
-                            <tr>
-                                <td>04</td>
-                                <td><h3><a href="index.html">Advance HighTechnology Trade</a></h3></td>
-                                <td><span>x3</span></td>
-                                <td><figure class="image-box"><a href="index.html"><img src="assets/images/icons/award-4.png" alt=""></a></figure></td>
-                                <td>2014</td>
-                            </tr>
-                            <tr>
-                                <td>05</td>
-                                <td><h3><a href="index.html">The Best Trading Platform, London</a></h3></td>
-                                <td><span>x4</span></td>
-                                <td><figure class="image-box"><a href="index.html"><img src="assets/images/icons/award-5.png" alt=""></a></figure></td>
-                                <td>2018</td>
-                            </tr>
-                        </tbody>    
-                    </table>
-                </div>
-            </div>
-        </section>
+        
         <!-- award-section end -->
 
 
         <!-- apps-section -->
-        <section class="apps-section">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="shape" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-                    <figure class="image-layer"><img src="assets/images/resource/mockup-1.png" alt=""></figure>
-                    <div class="content_block_two">
-                        <div class="content-box">
-                            <div class="sec-title light pb_40">
-                                <span class="sub-title mb_14">Download App</span>
-                                <h2>Download Trading App</h2>
-                                <p>We use cookines to understand how you use our website and to give you the best possible experience.</p>
-                            </div>
-                            <ul class="download-list clearfix">
-                                <li><a href="index.html"><i class="fab fa-apple"></i></a></li>
-                                <li><a href="index.html"><img src="assets/images/icons/icon-2.png" alt=""></a></li>
-                                <li><a href="index.html"><i class="fab fa-android"></i></a></li>
-                                <li><a href="index.html"><img src="assets/images/icons/icon-6.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- apps-section end -->
 
 
@@ -2167,52 +2123,105 @@
         <section class="news-section pt_100 pb_70">
             <div class="auto-container">
                 <div class="sec-title centred pb_60">
-                    <span class="sub-title mb_14">Media Center</span>
-                    <h2>Latest News Update</h2>
+                    <span class="sub-title mb_14">Market Insights</span>
+                    <h2>Latest Stock Market News</h2>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <span class="post-date">20TH April, 2024</span>
-                                <h3><a href="blog-details.html">USD/JPY Stages the more upsides can Bulls Aim for 160x Bonus?</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Curaitur in euismod odio gravida gravida. Discovery of the text's origin is attributed</p>
-                                <div class="link"><a href="blog-details.html">Read More</a></div>
-                            </div>
-                            <div class="author-box">
-                                <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.png" alt=""></figure>
-                                <span>Daniel Marcon</span>
+                                <div class="news-image">
+                                    <img src="{{ asset('assets/images/news/news-1.jpg') }}" alt="Stock Market News">
+                                    <div class="news-category">Markets</div>
+                                </div>
+                                <div class="news-content">
+                                    <span class="post-date">{{ date('jS M, Y') }}</span>
+                                    <h3><a href="https://economictimes.indiatimes.com/markets" target="_blank">Sensex hits fresh all-time high as banking stocks surge on positive RBI policy outlook</a></h3>
+                                    <p>Indian equity markets reached new peaks as banking and financial stocks rallied following the Reserve Bank of India's dovish monetary policy stance, boosting investor sentiment.</p>
+                                    <div class="news-meta">
+                                        <div class="source">
+                                            <i class="fas fa-newspaper"></i>
+                                            <span>Economic Times</span>
+                                        </div>
+                                        <div class="read-time">
+                                            <i class="fas fa-clock"></i>
+                                            <span>3 min read</span>
+                                        </div>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://economictimes.indiatimes.com/markets" target="_blank" rel="noopener noreferrer">
+                                            Read More <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <span class="post-date">19TH April, 2024</span>
-                                <h3><a href="blog-details.html">Nemo's Eurovision win fires up Swiss advocates for non-binary rights</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Curaitur in euismod odio gravida gravida. Discovery of the text's origin is attributed</p>
-                                <div class="link"><a href="blog-details.html">Read More</a></div>
-                            </div>
-                            <div class="author-box">
-                                <figure class="author-thumb"><img src="assets/images/resource/testimonial-2.png" alt=""></figure>
-                                <span>Robert Henry</span>
+                                <div class="news-image">
+                                    <img src="{{ asset('assets/images/news/news-2.jpg') }}" alt="Stock Market News">
+                                    <div class="news-category">Technology</div>
+                                </div>
+                                <div class="news-content">
+                                    <span class="post-date">{{ date('jS M, Y', strtotime('-1 day')) }}</span>
+                                    <h3><a href="https://www.moneycontrol.com/news/business/markets/" target="_blank">IT stocks rally as Q3 earnings beat expectations amid global tech recovery</a></h3>
+                                    <p>Technology sector witnesses strong buying as major IT companies report better-than-expected quarterly results, signaling recovery in global technology spending.</p>
+                                    <div class="news-meta">
+                                        <div class="source">
+                                            <i class="fas fa-newspaper"></i>
+                                            <span>MoneyControl</span>
+                                        </div>
+                                        <div class="read-time">
+                                            <i class="fas fa-clock"></i>
+                                            <span>4 min read</span>
+                                        </div>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://www.moneycontrol.com/news/business/markets/" target="_blank" rel="noopener noreferrer">
+                                            Read More <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <span class="post-date">18TH April, 2024</span>
-                                <h3><a href="blog-details.html">Wall St Week Ahead-Earnings bolster US stocks but crucial inflation report looms</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Curaitur in euismod odio gravida gravida. Discovery of the text's origin is attributed</p>
-                                <div class="link"><a href="blog-details.html">Read More</a></div>
-                            </div>
-                            <div class="author-box">
-                                <figure class="author-thumb"><img src="assets/images/resource/testimonial-3.png" alt=""></figure>
-                                <span>Victor Classic</span>
+                                <div class="news-image">
+                                    <img src="{{ asset('assets/images/news/news-3.jpg') }}" alt="Stock Market News">
+                                    <div class="news-category">Crypto</div>
+                                </div>
+                                <div class="news-content">
+                                    <span class="post-date">{{ date('jS M, Y', strtotime('-2 days')) }}</span>
+                                    <h3><a href="https://www.livemint.com/market" target="_blank">Bitcoin crosses $45,000 as institutional adoption drives cryptocurrency market surge</a></h3>
+                                    <p>Cryptocurrency markets gain momentum as major institutional investors increase Bitcoin allocations, driving prices higher amid growing mainstream acceptance.</p>
+                                    <div class="news-meta">
+                                        <div class="source">
+                                            <i class="fas fa-newspaper"></i>
+                                            <span>LiveMint</span>
+                                        </div>
+                                        <div class="read-time">
+                                            <i class="fas fa-clock"></i>
+                                            <span>5 min read</span>
+                                        </div>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://www.livemint.com/market" target="_blank" rel="noopener noreferrer">
+                                            Read More <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="view-more-section text-center mt_40">
+                    <a href="https://economictimes.indiatimes.com/markets" target="_blank" class="theme-btn btn-one" rel="noopener noreferrer">
+                        View All Market News <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>

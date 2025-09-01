@@ -8,7 +8,7 @@
 <title>INVEXO</title>
 
 <!-- Fav Icon -->
-<link rel="icon" href="{{ asset('images/favicon.jpg') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('images/favicon.jpeg') }}" type="image/x-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -121,7 +121,7 @@
                         <div class="option-block">
                             <div class="support-box">
                                 <div class="icon-box"><i class="icon-07"></i></div>
-                                <a href="tel:966572580280">+966 57 258 0280</a>
+                                <a href="tel:966572580280">+91 790 739 5692</a>
                             </div>
                              <div class="language-picker js-language-picker ml_40" data-trigger-class="btn btn--subtle">
                                 <form action="index-2.html" class="language-picker__form">

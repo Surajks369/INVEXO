@@ -157,6 +157,12 @@
 
     <!-- main-js -->
     <script src="{{ asset('assets/js/script.js') }}"></script>
+    
+    <!-- Preloader Fix -->
+    <script src="{{ asset('js/preloader-fix.js') }}"></script>
+    
+    <!-- Enhanced News Section JS -->
+    <script src="{{ asset('js/enhanced-news-section.js') }}"></script>
 
 </body><!-- End of .page_wrapper -->
 </html>

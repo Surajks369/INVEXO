@@ -6,7 +6,7 @@
 <title>INVEXO</title>
 
 <!-- Fav Icon -->
-<link rel="icon" href="{{ asset('images/favicon.jpg') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('images/favicon.jpeg') }}" type="image/x-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -39,6 +39,7 @@
 <link href="{{ asset('assets/css/module-css/subscribe.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/footer.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+<link href="{{ asset('css/enhanced-news-section.css') }}" rel="stylesheet">
 
 </head>
 
@@ -124,20 +125,10 @@
                     <div class="top-inner">
                         <div class="support-box">
                             <div class="icon-box"><i class="icon-07"></i></div>
-                            <a href="tel:966572580280">+966 57 258 0280</a>
+                            <a href="tel:966572580280">+91 790 739 5692</a>
                         </div>
                         <div class="option-block">
-                            <div class="language-picker js-language-picker mr_40" data-trigger-class="btn btn--subtle">
-                                <form action="index-2.html" class="language-picker__form">
-                                    <label for="language-picker-select">Select your language</label>
-                                    <select name="language-picker-select" id="language-picker-select">
-                                        <option lang="de" value="deutsch"></option>
-                                        <option lang="en" value="english" selected></option>
-                                        <option lang="fr" value="francais"></option>
-                                        <option lang="it" value="italiano"></option>
-                                    </select>
-                                </form>
-                            </div>
+                            
                             <a href="index.html" class="theme-btn btn-one mr_10">Open Account</a>
                             @auth
                                 <a href="{{ route('user.dashboard') }}" class="theme-btn btn-one mr_10">Dashboard</a>
