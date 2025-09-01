@@ -2099,7 +2099,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                             <div class="image-box">
-                                <figure class="image image-hov-two"><img src="assets/images/resource/process-1.jpg" alt=""></figure>
+                                <figure class="image image-hov-two"><img src="assets/images/resource/process-1.PNG" alt=""></figure>
                             </div>
                         </div>
                     </div>
