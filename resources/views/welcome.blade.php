@@ -385,7 +385,7 @@
                 <div class="inner-container clearfix">
                     <div class="trading-block-one">
                         <div class="inner-box">
-<figure class="image-box"><img src="{{ asset('assets/images/resource/trading-1.png') }}" alt=""></figure>
+<figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-1.png') }}" alt=""></figure>
                             <h3><a href="markets-details.html">Stock Market</a></h3>
                             <p style="color: #28a745;">Trading stocks of Indian companies on exchanges.</p>
                             <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
@@ -393,7 +393,7 @@
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
-<figure class="image-box"><img src="{{ asset('assets/images/resource/trading-2.png') }}" alt=""></figure>
+<figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-2.png') }}" alt=""></figure>
                             <h3><a href="markets-details.html">Trade Advide</a></h3>
                             <p style="color: #28a745;">Helping investors profit from short-term market fluctuations.</p>
                             <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
@@ -401,7 +401,7 @@
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
-<figure class="image-box"><img src="{{ asset('assets/images/resource/trading-3.png') }}" alt=""></figure>
+<figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-3.png') }}" alt=""></figure>
                             <h3><a href="markets-details.html">BitCoin</a></h3>
                             <p style="color: #28a745;">Making short-term profits from Bitcoin's price fluctuations.</p>
                             <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
@@ -409,7 +409,7 @@
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
-<figure class="image-box"><img src="{{ asset('assets/images/resource/trading-4.png') }}" alt=""></figure>
+<figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-4.png') }}" alt=""></figure>
                             <h3><a href="markets-details.html">Real Time Alert</a></h3>
                             <p style="color: #28a745;" >Immediate notifications on key stock market events.</p>
                             <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
@@ -417,7 +417,7 @@
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
-<figure class="image-box"><img src="{{ asset('assets/images/resource/trading-5.png') }}" alt=""></figure>
+<figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-5.png') }}" alt=""></figure>
                             <h3><a href="markets-details.html">Stock Advice</a></h3>
                             <p style="color: #28a745;">Expert guidance for smarter investment decisions.</p>
                             <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
