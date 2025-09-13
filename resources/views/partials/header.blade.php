@@ -32,6 +32,7 @@
 <link href="{{ asset('assets/css/module-css/about.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/funfact.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/trading.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/module-css/quotes.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/process.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/award.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/module-css/apps.css') }}" rel="stylesheet">

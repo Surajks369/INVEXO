@@ -383,26 +383,19 @@
                     <h2>Things We Trade</h2>
                 </div>
                 <div class="inner-container clearfix">
-                    <div class="trading-block-one">
-                        <div class="inner-box">
-<figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-1.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Stock Market</a></h3>
-                            <p style="color: #28a745;">Trading stocks of Indian companies on exchanges.</p>
-                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
-                        </div>
-                    </div>
+                    
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-2.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Trade Advide</a></h3>
-                            <p style="color: #28a745;">Helping investors profit from short-term market fluctuations.</p>
-                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
+    <h3><a href="markets-details.html">Trade Advide</a></h3>
+    <p>Helping investors profit from short-term market fluctuations.</p>
+    <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-3.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">BitCoin</a></h3>
+                            <h3><a href="markets-details.html">Crypto</a></h3>
                             <p style="color: #28a745;">Making short-term profits from Bitcoin's price fluctuations.</p>
                             <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
                         </div>
@@ -427,6 +420,9 @@
             </div>
         </section>
         <!-- trading-section end -->
+
+
+        
 
 
         <!-- trading-style-two -->
@@ -2226,6 +2222,71 @@
             </div>
         </section>
         <!-- news-section end -->
+
+        <!-- quotes-section -->
+        <section class="quotes-section pt_100 pb_100">
+            <div class="auto-container">
+                <div class="sec-title centred pb_60">
+                    <span class="sub-title mb_14">Words of Wisdom</span>
+                    <h2>Market Quotes</h2>
+                </div>
+                <div class="quotes-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
+                    <div class="quote-block">
+                        <div class="inner-box">
+                            <div class="author-image">
+                                <img src="{{ asset('assets/images/quotes/warren-buffett.jpg') }}" alt="Warren Buffett">
+                            </div>
+                            <div class="quote-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p>"Be fearful when others are greedy and greedy when others are fearful."</p>
+                                <h4>Warren Buffett</h4>
+                                <span>CEO of Berkshire Hathaway</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-block">
+                        <div class="inner-box">
+                            <div class="author-image">
+                                <img src="{{ asset('assets/images/quotes/peter-lynch.jpg') }}" alt="Peter Lynch">
+                            </div>
+                            <div class="quote-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p>"Know what you own, and know why you own it."</p>
+                                <h4>Peter Lynch</h4>
+                                <span>Former Manager of Magellan Fund</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-block">
+                        <div class="inner-box">
+                            <div class="author-image">
+                                <img src="{{ asset('assets/images/quotes/benjamin-graham.jpg') }}" alt="Benjamin Graham">
+                            </div>
+                            <div class="quote-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p>"The stock market is a voting machine in the short run, but a weighing machine in the long run."</p>
+                                <h4>Benjamin Graham</h4>
+                                <span>Father of Value Investing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-block">
+                        <div class="inner-box">
+                            <div class="author-image">
+                                <img src="{{ asset('assets/images/quotes/john-templeton.jpg') }}" alt="John Templeton">
+                            </div>
+                            <div class="quote-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p>"The time of maximum pessimism is the best time to buy, and the time of maximum optimism is the best time to sell."</p>
+                                <h4>John Templeton</h4>
+                                <span>Founder of Templeton Funds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- quotes-section end -->
 
 
         <!-- subscribe-section -->
