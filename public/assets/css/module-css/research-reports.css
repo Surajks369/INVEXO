@@ -1,0 +1,72 @@
+.blur-content {
+    filter: blur(3px);
+    pointer-events: none;
+    position: relative;
+}
+
+.research-reports-section .trading-block-two .inner-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.research-reports-section .trading-block-two .inner-box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.research-reports-section .trading-block-two .image-box {
+    margin-bottom: 15px;
+}
+
+.research-reports-section .trading-block-two .image-box img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.research-reports-section .trading-block-two h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.research-reports-section .trading-block-two .category-name {
+    color: #28a745;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.research-reports-section .btn-subscribe {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+.research-reports-section .btn-subscribe:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.research-reports-section .view-all-box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.project-tab .tab-btns .p-tab-btn {
+    margin: 0px 10px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.project-tab .tab-btns .p-tab-btn.active-btn {
+    color: #28a745;
+    font-weight: 600;
+}

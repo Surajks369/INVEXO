@@ -20,7 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+use App\Http\Controllers\WelcomeController;
+
+Route::get('/', [WelcomeController::class, 'index']);
 Route::get('/about', function () {
     return view('about');
 })->name('about');
@@ -41,6 +43,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [FrontLoginController::class, 'dashboard'])->name('user.dashboard');
     Route::get('/research-report/{id}', [App\Http\Controllers\ResearchReportController::class, 'show'])->name('research.report.detail');
 });
+
+// Public download route (no auth required)
+Route::get('/research-report/download/{id}/{token}', [App\Http\Controllers\ResearchReportController::class, 'download'])
+    ->name('research.report.download')
+    ->where('token', '[A-Za-z0-9]+');
 
 // Contact page routes
 Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');

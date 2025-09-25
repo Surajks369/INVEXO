@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ResearchReport;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Illuminate\Support\Str;
 
 class ResearchReportController extends Controller
@@ -18,6 +17,12 @@ class ResearchReportController extends Controller
                                 ->where('status', 1) // Only active reports
                                 ->firstOrFail();
 
+            // Verify token
+            $validToken = md5($report->id . $report->name . $report->created_at);
+            if ($token !== substr($validToken, 0, 10)) {
+                abort(403, 'Invalid token');
+            }
+
             // Try both storage paths
             $filePath = storage_path('app/public/' . $report->report);
             $publicPath = public_path('storage/' . $report->report);
@@ -28,7 +33,11 @@ class ResearchReportController extends Controller
             } elseif (file_exists($publicPath)) {
                 $finalPath = $publicPath;
             } else {
-                return response()->json(['error' => 'Report file not found'], 404);
+                // Create storage link if it doesn't exist
+                if (!file_exists(public_path('storage'))) {
+                    symlink(storage_path('app/public'), public_path('storage'));
+                }
+                return back()->with('error', 'Report file not found. Please contact administrator.');
             }
 
             // Get file name with slug
@@ -37,20 +46,16 @@ class ResearchReportController extends Controller
             // Force download the file
             return response()->download($finalPath, $fileName, [
                 'Content-Type' => 'application/pdf',
-                'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
-                'Cache-Control' => 'no-store, no-cache, must-revalidate, max-age=0',
-                'Pragma' => 'no-cache',
-                'Expires' => '0'
-            ]);
-            
-        } catch (\Exception $e) {
-            Log::error('Download failed: ' . $e->getMessage());
-            return response()->json(['error' => 'Failed to download report'], 500);
-        }
+            'Content-Disposition' => 'attachment; filename="' . $fileName . '"',
+            'Cache-Control' => 'no-store, no-cache, must-revalidate, max-age=0',
+            'Pragma' => 'no-cache',
+            'Expires' => '0',
+        ]);
     }
 
     public function show($id)
     {
+        // Check if user is authenticated
         if (!Auth::check()) {
             return redirect()->route('user.login');
         }
@@ -58,12 +63,13 @@ class ResearchReportController extends Controller
         $user = Auth::user();
         $today = now();
         
+        // Check if user has active subscription
         if (!$user->renewal_date || $user->renewal_date < $today) {
-            return redirect()->route('user.dashboard')
-                ->with('error', 'Your subscription has expired. Please renew to access reports.');
+            return redirect()->route('user.dashboard')->with('error', 'Your subscription has expired. Please renew to access reports.');
         }
 
         $report = ResearchReport::findOrFail($id);
+        
         return view('research_report_detail', compact('report', 'user'));
     }
 }

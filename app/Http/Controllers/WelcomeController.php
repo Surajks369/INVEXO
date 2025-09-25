@@ -1,0 +1,47 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Category;
+use App\Models\ResearchReport;
+use Illuminate\Http\Request;
+
+class WelcomeController extends Controller
+{
+    public function index()
+    {
+        try {
+            // Get all categories
+            $categories = Category::all();
+
+            // Get research reports for each category
+            $reports = [];
+            $downloadTokens = [];
+            foreach ($categories as $category) {
+                $categoryReports = ResearchReport::where('category', $category->id)
+                                        ->where('status', 1)
+                                        ->orderBy('created_at', 'desc')
+                                        ->get();
+                
+                $reports[$category->id] = $categoryReports;
+                
+                // Generate tokens for each report
+                foreach ($categoryReports as $report) {
+                    $downloadTokens[$report->id] = substr(md5($report->id . $report->name . $report->created_at), 0, 10);
+                }
+            }
+
+            return view('welcome', [
+                'categories' => $categories,
+                'reports' => $reports,
+                'downloadTokens' => $downloadTokens
+            ]);
+        } catch (\Exception $e) {
+            // If there's an error, return the welcome view with empty data
+            return view('welcome', [
+                'categories' => collect([]),
+                'reports' => []
+            ]);
+        }
+    }
+}

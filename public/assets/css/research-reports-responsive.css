@@ -1,0 +1,49 @@
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .trading-block-two {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (max-width: 991px) {
+    .trading-block-two {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .trading-block-two {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Additional styles for the view all button */
+.view-all-box {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.view-all-box .btn-subscribe {
+    padding: 15px 40px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+}
+
+.view-all-box .btn-subscribe i {
+    margin-right: 8px;
+}
+
+/* Hover effect for PDF icon */
+.trading-block-two .pdf-icon {
+    transition: all 0.3s ease;
+}
+
+.trading-block-two .inner-box:hover .pdf-icon {
+    color: #28a745;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(40, 167, 69, 0.3));
+}
