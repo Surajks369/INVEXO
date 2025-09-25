@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\ResearchReport;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class WelcomeController extends Controller
 {
@@ -13,6 +14,10 @@ class WelcomeController extends Controller
         try {
             // Get all categories
             $categories = Category::all();
+
+            if ($categories->isEmpty()) {
+                Log::warning('No categories found in the database');
+            }
 
             // Get research reports for each category
             $reports = [];
@@ -37,10 +42,14 @@ class WelcomeController extends Controller
                 'downloadTokens' => $downloadTokens
             ]);
         } catch (\Exception $e) {
-            // If there's an error, return the welcome view with empty data
+            Log::error('Error in WelcomeController@index: ' . $e->getMessage());
+            Log::error($e->getTraceAsString());
+            
+            // If there's an error, return the welcome view with empty data but include error info
             return view('welcome', [
                 'categories' => collect([]),
-                'reports' => []
+                'reports' => [],
+                'error' => $e->getMessage()
             ]);
         }
     }
