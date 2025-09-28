@@ -427,7 +427,7 @@
 
         <!-- research-reports-section -->
         <section class="research-reports-section centred pt_100 pb_90">
-            <link rel="stylesheet" href="{{ asset('assets/css/research-reports.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/css/research-reports-new.css') }}">
             <div class="auto-container">
                 <div class="sec-title light pb_60">
                     <span class="sub-title mb_14">Research Reports</span>
@@ -449,20 +449,40 @@
                                     @forelse($reports[$category->id] as $index => $report)
                                         <div class="col-lg-4 col-md-6 trading-block-two">
                                             <div class="inner-box {{ $index >= 2 ? 'blur-content' : '' }}">
-                                                <div class="image-box">
-                                                    <i class="fas fa-file-pdf pdf-icon"></i>
-                                                </div>
+                                                @if($report->company_logo)
+                                                    <img src="{{ asset('storage/'.$report->company_logo) }}" alt="{{ $report->name }}" class="company-logo">
+                                                @endif
                                                 <h5>{{ $report->name }}</h5>
-                                                <div class="category-name">
-                                                    <i class="fas fa-tag"></i> {{ $category->name }}
+                                                <div class="stock-details">
+                                                    <div class="stock-info">
+                                                        <span class="stock-code">NSE: {{ $report->nse_code }}</span>
+                                                        <span class="recommendation {{ strtolower($report->recommendation) }}">
+                                            {{ $report->recommendation }}
+                                        </span>
+                                                    </div>
                                                 </div>
-                                                <div class="report-meta">
-                                                    <span><i class="fas fa-calendar"></i> {{ $report->created_at->format('M d, Y') }}</span>
+                                                <div class="price-details">
+                                                    <div class="price-row">
+                                                        <span>Current Price:</span>
+                                                        <strong>₹{{ number_format($report->current_price, 2) }}</strong>
+                                                    </div>
+                                                    <div class="price-row">
+                                                        <span>Target Price:</span>
+                                                        <strong>₹{{ number_format($report->target_price, 2) }}</strong>
+                                                    </div>
+                                                    <div class="price-row">
+                                                        <span>Potential:</span>
+                                                        <span class="potential">{{ number_format($report->potential, 1) }}%</span>
+                                                    </div>
                                                 </div>
-                                                <div class="btn-box">
+                                                <div class="meta-info">
+                                                    <span>{{ $report->expect_hold_period }}</span>
+                                                    <span>{{ $report->created_at->format('M d, Y') }}</span>
+                                                </div>
+                                                <div class="btn-box mt-3">
                                                     @if($index < 2)
-                                                        <a href="{{ route('research.report.download', ['id' => $report->id, 'token' => $downloadTokens[$report->id]]) }}" class="theme-btn btn-one" target="_blank">
-                                                            <i class="fas fa-download"></i> Get Report
+                                                        <a href="" class="theme-btn btn-one" target="_blank">
+                                                            <i class="fas fa-eye"></i> View Report
                                                         </a>
                                                     @else
                                                         <a href="{{ route('pricing') }}" class="theme-btn btn-subscribe">

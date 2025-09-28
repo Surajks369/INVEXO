@@ -37,11 +37,38 @@
                       </select>
                     </div>
                     <div class="form-group mb-3">
-                      <label>PDF Report</label>
-                      <input type="file" name="report" class="form-control" accept="application/pdf">
-                      @if($report->report)
-                        <a href="{{ asset('storage/'.$report->report) }}" target="_blank">Current PDF</a>
+                      <label>NSE Code</label>
+                      <input type="text" name="nse_code" class="form-control" value="{{ old('nse_code', $report->nse_code) }}" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Recommendation</label>
+                      <input type="text" name="recommendation" class="form-control" value="{{ old('recommendation', $report->recommendation) }}" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Current Price (₹)</label>
+                      <input type="number" step="0.01" name="current_price" class="form-control" value="{{ old('current_price', $report->current_price) }}" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Target Price (₹)</label>
+                      <input type="number" step="0.01" name="target_price" class="form-control" value="{{ old('target_price', $report->target_price) }}" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Potential (%)</label>
+                      <input type="number" step="0.01" name="potential" class="form-control" value="{{ old('potential', $report->potential) }}" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Expected Holding Period</label>
+                      <input type="text" name="expect_hold_period" class="form-control" value="{{ old('expect_hold_period', $report->expect_hold_period) }}" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Company Logo</label>
+                      <input type="file" name="company_logo" class="form-control" accept="image/jpeg,image/png,image/jpg">
+                      @if($report->company_logo)
+                        <div class="mt-2">
+                          <img src="{{ asset('storage/'.$report->company_logo) }}" alt="{{ $report->name }}" style="width: 100px; height: 100px; object-fit: contain;">
+                        </div>
                       @endif
+                      <small class="form-text text-muted">Upload new JPG, JPEG, or PNG image (max 2MB) to replace the existing one</small>
                     </div>
                     <div class="form-group mb-4">
                       <label>Status</label>

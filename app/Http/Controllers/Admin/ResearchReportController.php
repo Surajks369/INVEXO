@@ -3,16 +3,17 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Admin\ResearchReport;
+use App\Models\ResearchReport;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class ResearchReportController extends Controller
 {
     public function index()
     {
-        $reports = ResearchReport::with('categoryRelation')->get();
+        $reports = ResearchReport::with('category')->latest()->paginate(10);
         return view('admin.research_reports.index', compact('reports'));
     }
 
@@ -24,29 +25,30 @@ class ResearchReportController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'name' => 'required|string|max:255',
             'category' => 'required|exists:categories,id',
-            'report' => 'required|mimes:pdf|max:10240', // max 10MB
+            'nse_code' => 'required|string|max:50',
+            'recommendation' => 'required|string|max:50',
+            'current_price' => 'required|numeric',
+            'target_price' => 'required|numeric',
+            'potential' => 'required|numeric',
+            'expect_hold_period' => 'required|string|max:50',
+            'company_logo' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             'status' => 'required|in:0,1',
         ]);
 
-        if ($request->hasFile('report')) {
-            $pdfName = time() . '.' . $request->report->extension();
-            $request->report->storeAs('public/reports', $pdfName);
-
-            ResearchReport::create([
-                'name' => $request->name,
-                'category' => $request->category,
-                'report' => 'reports/' . $pdfName,
-                'status' => $request->status,
-            ]);
-
-            return redirect()->route('research-reports.index')
-                ->with('success', 'Research report created successfully.');
+        if ($request->hasFile('company_logo')) {
+            $file = $request->file('company_logo');
+            $filename = Str::slug($request->name) . '-' . time() . '.' . $file->getClientOriginalExtension();
+            $path = $file->storeAs('company-logos', $filename, 'public');
+            $validated['company_logo'] = $path;
         }
 
-        return back()->with('error', 'Please upload a PDF file.');
+        ResearchReport::create($validated);
+
+        return redirect()->route('research-reports.index')
+            ->with('success', 'Research report created successfully.');
     }
 
     public function edit($id)
@@ -58,33 +60,35 @@ class ResearchReportController extends Controller
 
     public function update(Request $request, $id)
     {
-        $request->validate([
+        $report = ResearchReport::findOrFail($id);
+        
+        $validated = $request->validate([
             'name' => 'required|string|max:255',
             'category' => 'required|exists:categories,id',
-            'report' => 'nullable|mimes:pdf|max:10240', // max 10MB
+            'nse_code' => 'required|string|max:50',
+            'recommendation' => 'required|string|max:50',
+            'current_price' => 'required|numeric',
+            'target_price' => 'required|numeric',
+            'potential' => 'required|numeric',
+            'expect_hold_period' => 'required|string|max:50',
+            'company_logo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'status' => 'required|in:0,1',
         ]);
 
-        $report = ResearchReport::findOrFail($id);
-        $data = [
-            'name' => $request->name,
-            'category' => $request->category,
-            'status' => $request->status,
-        ];
-
-        if ($request->hasFile('report')) {
-            // Delete old file if exists
-            if ($report->report && Storage::exists('public/' . $report->report)) {
-                Storage::delete('public/' . $report->report);
+        if ($request->hasFile('company_logo')) {
+            // Delete old logo if exists
+            if ($report->company_logo && Storage::exists('public/' . $report->company_logo)) {
+                Storage::delete('public/' . $report->company_logo);
             }
 
-            // Store new file
-            $pdfName = time() . '.' . $request->report->extension();
-            $request->report->storeAs('public/reports', $pdfName);
-            $data['report'] = 'reports/' . $pdfName;
+            // Store new logo
+            $file = $request->file('company_logo');
+            $filename = Str::slug($request->name) . '-' . time() . '.' . $file->getClientOriginalExtension();
+            $path = $file->storeAs('company-logos', $filename, 'public');
+            $validated['company_logo'] = $path;
         }
 
-        $report->update($data);
+        $report->update($validated);
 
         return redirect()->route('research-reports.index')
             ->with('success', 'Research report updated successfully.');
@@ -94,9 +98,9 @@ class ResearchReportController extends Controller
     {
         $report = ResearchReport::findOrFail($id);
         
-        // Delete PDF file if exists
-        if ($report->report && Storage::exists('public/' . $report->report)) {
-            Storage::delete('public/' . $report->report);
+        // Delete company logo if exists
+        if ($report->company_logo && Storage::exists('public/' . $report->company_logo)) {
+            Storage::delete('public/' . $report->company_logo);
         }
 
         $report->delete();

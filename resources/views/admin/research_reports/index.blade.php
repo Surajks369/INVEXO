@@ -21,11 +21,13 @@
                       <thead>
                         <tr>
                           <th>#</th>
+                          <th>Company Logo</th>
                           <th>Name</th>
-                          <th>Category</th>
-                          <th>PDF</th>
+                          <th>NSE Code</th>
+                          <th>Recommendation</th>
+                          <th>Current Price</th>
+                          <th>Target Price</th>
                           <th>Status</th>
-                          <th>Created At</th>
                           <th>Actions</th>
                         </tr>
                       </thead>
@@ -34,15 +36,17 @@
                           @php $loopIndex = $loop->iteration; @endphp
                           <tr>
                             <td>{{ $loopIndex }}</td>
-                            <td>{{ $report->name }}</td>
-                            <td>{{ $report->categoryRelation->name ?? '' }}</td>
                             <td>
-                              @if($report->report)
-                                <a href="{{ asset('storage/'.$report->report) }}" target="_blank">View PDF</a>
+                              @if($report->company_logo)
+                                <img src="{{ asset('storage/'.$report->company_logo) }}" alt="{{ $report->name }}" style="width: 50px; height: 50px; object-fit: contain;">
                               @endif
                             </td>
+                            <td>{{ $report->name }}</td>
+                            <td>{{ $report->nse_code }}</td>
+                            <td>{{ $report->recommendation }}</td>
+                            <td>₹{{ number_format($report->current_price, 2) }}</td>
+                            <td>₹{{ number_format($report->target_price, 2) }}</td>
                             <td>{{ $report->status ? 'Active' : 'Inactive' }}</td>
-                            <td>{{ $report->created_at->format('Y-m-d') }}</td>
                             <td>
                               <a href="{{ route('research-reports.edit', $report->id) }}" class="btn btn-sm btn-edit-custom">Edit</a>
                               <form action="{{ route('research-reports.destroy', $report->id) }}" method="POST" style="display:inline-block;">

@@ -37,8 +37,33 @@
                       </select>
                     </div>
                     <div class="form-group mb-3">
-                      <label>PDF Report</label>
-                      <input type="file" name="report" class="form-control" accept="application/pdf" required>
+                      <label>NSE Code</label>
+                      <input type="text" name="nse_code" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Recommendation</label>
+                      <input type="text" name="recommendation" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Current Price (₹)</label>
+                      <input type="number" step="0.01" name="current_price" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Target Price (₹)</label>
+                      <input type="number" step="0.01" name="target_price" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Potential (%)</label>
+                      <input type="number" step="0.01" name="potential" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Expected Holding Period</label>
+                      <input type="text" name="expect_hold_period" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label>Company Logo</label>
+                      <input type="file" name="company_logo" class="form-control" accept="image/jpeg,image/png,image/jpg" required>
+                      <small class="form-text text-muted">Upload JPG, JPEG, or PNG image (max 2MB)</small>
                     </div>
                     <div class="form-group mb-4">
                       <label>Status</label>
