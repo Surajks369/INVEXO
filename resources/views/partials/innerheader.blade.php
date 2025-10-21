@@ -181,7 +181,7 @@
             <div class="sticky-header">
                 <div class="large-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logo.jpeg') }}" alt="" style="height:50px;"></a></figure>
+                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <nav class="main-menu clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->
