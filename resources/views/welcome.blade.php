@@ -76,7 +76,7 @@
             <div class="sticky-header">
                 <div class="large-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="assets/images/logo.jpeg" alt="" style="height:50px;"></a></figure>
+                        <figure class="logo-box"><a href="index.html"><img src="assets/images/logo.PNG" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <nav class="main-menu clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->
@@ -436,7 +436,7 @@
                 </div>
                 <div class="project-tab">
                     <div class="tab-btn-box mb_40">
-                        <ul class="tab-btns product-tab-btns clearfix">
+                        <ul class="tab-btns product-tab-btns clearfix left-tabs">
                             @foreach($categories as $key => $category)
                                 <li class="p-tab-btn {{ $key === 0 ? 'active-btn' : '' }}" data-tab="#tab-{{ $category->id }}">{{ $category->name }}</li>
                             @endforeach
@@ -455,7 +455,7 @@
                                                 <h5>{{ $report->name }}</h5>
                                                 <div class="stock-details">
                                                     <div class="stock-info">
-                                                        <span class="stock-code">NSE: {{ $report->nse_code }}</span>
+                                                        <span class="stock-code">CODE: {{ $report->nse_code }}</span>
                                                         <span class="recommendation {{ strtolower($report->recommendation) }}">
                                             {{ $report->recommendation }}
                                         </span>
@@ -474,22 +474,12 @@
                                                         <span>Potential:</span>
                                                         <span class="potential">{{ number_format($report->potential, 1) }}%</span>
                                                     </div>
+                                                    <div class="price-row">
+                                                        <span>Expected Duration:</span>
+                                                        <span class="potential">{{ $report->expect_hold_period }}</span>
+                                                    </div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <span>{{ $report->expect_hold_period }}</span>
-                                                    <span>{{ $report->created_at->format('M d, Y') }}</span>
-                                                </div>
-                                                <div class="btn-box mt-3">
-                                                    @if($index < 2)
-                                                        <a href="" class="theme-btn btn-one" target="_blank">
-                                                            <i class="fas fa-eye"></i> View Report
-                                                        </a>
-                                                    @else
-                                                        <a href="{{ route('pricing') }}" class="theme-btn btn-subscribe">
-                                                            <i class="fas fa-lock"></i> Subscribe to View
-                                                        </a>
-                                                    @endif
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                     @empty

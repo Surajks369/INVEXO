@@ -7,6 +7,11 @@
     background: #162339;
 }
 
+/* Left aligned tabs */
+.project-tab .tab-btn-box { text-align: left; }
+.project-tab .tab-btns.left-tabs { display: flex; gap: 12px; flex-wrap: nowrap; overflow-x: auto; }
+.project-tab .tab-btns.left-tabs .p-tab-btn { display: inline-block; margin-right: 8px; }
+
 /* New styles for research report cards */
 .research-reports-section .trading-block-two .inner-box {
     background-color: #ffffff;
@@ -19,6 +24,10 @@
     position: relative;
     min-height: 450px;
 }
+
+/* Make meta-info show expected label and date stacked on smaller screens */
+.research-reports-section .trading-block-two .meta-info { display: flex; justify-content: space-between; gap: 10px; }
+.research-reports-section .trading-block-two .meta-info div { font-size: 13px; color: #333; }
 
 .research-reports-section .trading-block-two .inner-box:hover {
     transform: translateY(-5px);

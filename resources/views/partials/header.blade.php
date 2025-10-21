@@ -6,7 +6,7 @@
 <title>INVEXO</title>
 
 <!-- Fav Icon -->
-<link rel="icon" href="{{ asset('images/favicon.jpeg') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('images/favicon.PNG') }}" type="image/x-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -98,7 +98,7 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box">
-<figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('assets/images/logo.jpeg') }}" alt=""></a></figure>
+<figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('assets/images/logo.PNG') }}" alt=""></a></figure>
                     <div class="close-search"><i class="fal fa-times"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
@@ -130,7 +130,7 @@
                         </div>
                         <div class="option-block">
                             
-                            <a href="index.html" class="theme-btn btn-one mr_10">Open Account</a>
+                            <a href="pricing" class="theme-btn btn-one mr_10">Get subscription</a>
                             @auth
                                 <a href="{{ route('user.dashboard') }}" class="theme-btn btn-one mr_10">Dashboard</a>
                                 <form method="POST" action="{{ route('user.logout') }}" style="display: inline;">
@@ -148,7 +148,7 @@
             <div class="header-lower">
                 <div class="large-container">
                     <div class="outer-box">
-<figure class="logo-box"><a href="index.html"><img src="{{ asset('images/logo.jpeg') }}" alt="" style="height:50px;"></a></figure>
+<figure class="logo-box"><a href="index.html"><img src="{{ asset('images/logo.PNG') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <!--Mobile Navigation Toggler-->
                             <div class="mobile-nav-toggler">

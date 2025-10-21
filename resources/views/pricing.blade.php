@@ -68,12 +68,12 @@
                                     </div>
                                     <div class="price-amount" id="annual-price">
                                         <span class="currency">₹</span>
-                                        <span class="amount">5,999</span>
+                                        <span class="amount">999</span>
                                         <span class="duration">/year</span>
                                     </div>
                                     <div class="price-amount" id="quarterly-price" style="display: none;">
                                         <span class="currency">₹</span>
-                                        <span class="amount">2,599</span>
+                                        <span class="amount">599</span>
                                         <span class="duration">/3 months</span>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                     </div>
 
                     <!-- Custom Plan -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                    {{--<div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
                         <div class="pricing-block-one wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
                             <div class="inner-box">
                                 <div class="price-header">
@@ -119,7 +119,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
         </section>
