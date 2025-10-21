@@ -8,7 +8,7 @@
 <title>INVEXO</title>
 
 <!-- Fav Icon -->
-<link rel="icon" href="{{ asset('images/faviconinvexo.PNG') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('assets/images/faviconinvexo.png') }}" type="image/x-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -92,7 +92,7 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box">
-                    <figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('images/logoinvexo.PNG') }}" alt="" style="height:50px;width:100px;"></a></figure>
+                    <figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;width:100px;"></a></figure>
                     <div class="close-search"><i class="fal fa-times"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
@@ -143,7 +143,7 @@
             <div class="header-lower">
                 <div class="outer-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('images/logoinvexo.PNG') }}" alt="" style="height:50px;"></a></figure>
+                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <!--Mobile Navigation Toggler-->
                             <div class="mobile-nav-toggler">

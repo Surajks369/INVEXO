@@ -98,7 +98,7 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box">
-<figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.PNG') }}" alt=""></a></figure>
+<figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt=""></a></figure>
                     <div class="close-search"><i class="fal fa-times"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
@@ -148,7 +148,7 @@
             <div class="header-lower">
                 <div class="large-container">
                     <div class="outer-box">
-<figure class="logo-box"><a href="index.html"><img src="{{ asset('images/logoinvexo.PNG') }}" alt="" style="height:50px;"></a></figure>
+<figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <!--Mobile Navigation Toggler-->
                             <div class="mobile-nav-toggler">
