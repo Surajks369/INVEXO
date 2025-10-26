@@ -33,6 +33,10 @@ Route::get('/pricing', function () {
     return view('pricing');
 })->name('pricing');
 
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
 // Frontend login routes (user)
 Route::get('/user-login', [FrontLoginController::class, 'showLoginForm'])->name('user.login');
 Route::post('/user-login', [FrontLoginController::class, 'login'])->name('user.login.submit');
