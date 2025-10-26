@@ -8,7 +8,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                                     <div class="footer-widget links-widget">
                                         <div class="widget-title mb_11">
-                                            <h3>About Us</h3>
+                                            <h3>Quick Links</h3>
                                         </div>
                                         <div class="widget-content">
                                             <ul class="links-list clearfix">
