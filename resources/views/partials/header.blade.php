@@ -42,6 +42,9 @@
 <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
 <link href="{{ asset('css/enhanced-news-section.css') }}" rel="stylesheet">
 
+<!-- Preloader Control -->
+<script src="{{ asset('assets/js/preloader-control.js') }}"></script>
+
 </head>
 
 
@@ -52,7 +55,11 @@
 
 
         <!-- preloader -->
-        <div class="loader-wrap">
+        @php
+            $referrer = $_SERVER['HTTP_REFERER'] ?? '';
+            $showPreloader = !str_contains($referrer, $_SERVER['HTTP_HOST']);
+        @endphp
+        <div class="loader-wrap" style="display: {{ $showPreloader ? 'block' : 'none' }}">
             <div class="preloader">
                 <div class="preloader-close"><i class="fal fa-times"></i></div>
                 <div id="handle-preloader" class="handle-preloader">
@@ -77,7 +84,6 @@
                             <span data-text-preloader="o" class="letters-loading">
                                 o
                             </span>
-                           
                         </div>
                     </div>  
                 </div>

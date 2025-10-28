@@ -46,7 +46,7 @@
 
 
         <!-- preloader -->
-        <div class="loader-wrap">
+        {{--<div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close"><i class="fal fa-times"></i></div>
                 <div id="handle-preloader" class="handle-preloader">
@@ -76,7 +76,7 @@
                     </div>  
                 </div>
             </div>
-        </div>
+        </div>--}}
         <!-- preloader end -->
 
 
