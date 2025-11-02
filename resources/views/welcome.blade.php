@@ -448,31 +448,51 @@
                                 <div class="row">
                                     @forelse($reports[$category->id] as $index => $report)
                                         <div class="col-lg-4 col-md-6 trading-block-two">
-                                            <div class="inner-box {{ $index >= 2 ? 'blur-content' : '' }}">
+                                            <div class="inner-box">
+                                                <style>
+                                                    .blur-value {
+                                                        filter: blur(4px);
+                                                        user-select: none;
+                                                        pointer-events: none;
+                                                    }
+                                                    .blur-text {
+                                                        display: inline-block;
+                                                        background: rgba(0,0,0,0.1);
+                                                        filter: blur(4px);
+                                                        user-select: none;
+                                                        min-width: 60px;
+                                                    }
+                                                    .company-logo.blur {
+                                                        filter: blur(8px);
+                                                        opacity: 0.7;
+                                                    }
+                                                </style>
                                                 @if($report->company_logo)
-                                                    <img src="{{ asset('storage/'.$report->company_logo) }}" alt="{{ $report->name }}" class="company-logo">
+                                                    <img src="{{ asset('storage/'.$report->company_logo) }}" alt="Company Logo" class="company-logo blur">
                                                 @endif
-                                                <h5>{{ $report->name }}</h5>
+                                                <h5>
+                                                    <span class="blur-text">{{ $report->name }}</span>
+                                                </h5>
                                                 <div class="stock-details">
                                                     <div class="stock-info">
-                                                        <span class="stock-code">CODE: {{ $report->nse_code }}</span>
+                                                        <span class="stock-code">CODE: <span class="blur-text">{{ $report->nse_code }}</span></span>
                                                         <span class="recommendation {{ strtolower($report->recommendation) }}">
-                                            {{ $report->recommendation }}
-                                        </span>
+                                                            <span class="blur-text">{{ $report->recommendation }}</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class="price-details">
                                                     <div class="price-row">
                                                         <span>Current Price:</span>
-                                                        <strong>₹{{ number_format($report->current_price, 2) }}</strong>
+                                                        <strong class="blur-text">₹{{ number_format($report->current_price, 2) }}</strong>
                                                     </div>
                                                     <div class="price-row">
                                                         <span>Target Price:</span>
-                                                        <strong>₹{{ number_format($report->target_price, 2) }}</strong>
+                                                        <strong class="blur-text">₹{{ number_format($report->target_price, 2) }}</strong>
                                                     </div>
                                                     <div class="price-row">
                                                         <span>Potential:</span>
-                                                        <span class="potential">{{ number_format($report->potential, 1) }}%</span>
+                                                        <span class="potential blur-text">{{ number_format($report->potential, 1) }}%</span>
                                                     </div>
                                                     <div class="price-row">
                                                         <span>Expected Duration:</span>
@@ -512,13 +532,11 @@
                                         </div>
                                     @endforelse
                                 </div>
-                                @if(count($reports[$category->id]) > 2)
-                                    <div class="view-all-box">
-                                        <a href="{{ route('pricing') }}" class="theme-btn btn-subscribe">
-                                            <i class="fas fa-unlock"></i> Subscribe to View All Reports
-                                        </a>
-                                    </div>
-                                @endif
+                                <div class="view-all-box">
+                                    <a href="{{ route('pricing') }}" class="theme-btn btn-subscribe">
+                                        <i class="fas fa-unlock"></i> Subscribe to View Full Report Details
+                                    </a>
+                                </div>
                             </div>
                         @endforeach
                     </div>

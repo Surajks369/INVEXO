@@ -26,6 +26,7 @@ class WelcomeController extends Controller
                 $categoryReports = ResearchReport::where('category', $category->id)
                                         ->where('status', 1)
                                         ->orderBy('created_at', 'desc')
+                                        ->take(3)
                                         ->get();
                 
                 $reports[$category->id] = $categoryReports;
