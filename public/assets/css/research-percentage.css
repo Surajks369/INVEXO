@@ -1,0 +1,52 @@
+.research-percentage-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Increased from 8px */
+    margin-top: 15px; /* Increased from 10px */
+    margin-bottom: 20px; /* Increased from 15px */
+}
+
+.research-percentage-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Increased from 8px */
+    font-size: 13px; /* Increased from 12px */
+}
+
+.research-percentage-label {
+    width: 40px;
+    font-weight: 500;
+}
+
+.research-percentage-track {
+    flex-grow: 1;
+    height: 12px; /* Increased from 4px to 12px (3 times) */
+    background-color: #f0f0f0;
+    border-radius: 6px; /* Increased to match new height */
+    overflow: hidden;
+}
+
+.research-percentage-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.research-percentage-value {
+    width: 35px;
+    text-align: right;
+    font-weight: 500;
+}
+
+/* Bar colors */
+.research-percentage-buy .research-percentage-fill {
+    background-color: #28a745;
+}
+
+.research-percentage-hold .research-percentage-fill {
+    background-color: #17a2b8;
+}
+
+.research-percentage-sell .research-percentage-fill {
+    background-color: #dc3545;
+}

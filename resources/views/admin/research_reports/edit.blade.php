@@ -60,6 +60,7 @@
                       <label>Expected Holding Period</label>
                       <input type="text" name="expect_hold_period" class="form-control" value="{{ old('expect_hold_period', $report->expect_hold_period) }}" required>
                     </div>
+                    @include('admin.research_reports.partials.percentage_fields')
                     <div class="form-group mb-3">
                       <label>Company Logo</label>
                       <input type="file" name="company_logo" class="form-control" accept="image/jpeg,image/png,image/jpg">

@@ -19,7 +19,10 @@ class ResearchReport extends Model
         'target_price',
         'potential',
         'expect_hold_period',
-        'company_logo'
+        'company_logo',
+        'buy_percentage',
+        'hold_percentage',
+        'sell_percentage'
     ];
 
     public function category()

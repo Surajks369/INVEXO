@@ -36,6 +36,9 @@ class ResearchReportController extends Controller
             'expect_hold_period' => 'required|string|max:50',
             'company_logo' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             'status' => 'required|in:0,1',
+            'buy_percentage' => 'required|numeric|min:0|max:100',
+            'hold_percentage' => 'required|numeric|min:0|max:100',
+            'sell_percentage' => 'required|numeric|min:0|max:100',
         ]);
 
         if ($request->hasFile('company_logo')) {
@@ -73,6 +76,9 @@ class ResearchReportController extends Controller
             'expect_hold_period' => 'required|string|max:50',
             'company_logo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'status' => 'required|in:0,1',
+            'buy_percentage' => 'required|numeric|min:0|max:100',
+            'hold_percentage' => 'required|numeric|min:0|max:100',
+            'sell_percentage' => 'required|numeric|min:0|max:100',
         ]);
 
         if ($request->hasFile('company_logo')) {

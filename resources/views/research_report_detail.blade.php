@@ -94,6 +94,10 @@
                             </div>
                         @endif
 
+                        <div class="report-recommendations">
+                            <h4>Recommendations</h4>
+                            @include('partials.percentage_bars')
+
                         <div class="report-file">
                             <h4>Download Report</h4>
                             <div class="file-download">

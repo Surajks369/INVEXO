@@ -129,8 +129,8 @@
                             <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
                             <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
-                                <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
+                                <a href="/user-login" class="theme-btn btn-one">Explore Free Advice</a>
+                                <a href="/pricing" class="theme-btn btn-one">Unlock Premium Now</a>
                             </div>
                         </div>
                     </div>
@@ -479,7 +479,31 @@
                                                         <span class="potential">{{ $report->expect_hold_period }}</span>
                                                     </div>
                                                 </div>
-                                               
+                                                
+                                                <link rel="stylesheet" href="{{ asset('assets/css/research-percentage.css') }}">
+                                                <div class="research-percentage-bars">
+                                                    <div class="research-percentage-bar research-percentage-buy">
+                                                        <div class="research-percentage-label">Buy</div>
+                                                        <div class="research-percentage-track">
+                                                            <div class="research-percentage-fill" style="width: {{ $report->buy_percentage ?? 0 }}%"></div>
+                                                        </div>
+                                                        <div class="research-percentage-value">{{ $report->buy_percentage ?? 0 }}%</div>
+                                                    </div>
+                                                    <div class="research-percentage-bar research-percentage-hold">
+                                                        <div class="research-percentage-label">Hold</div>
+                                                        <div class="research-percentage-track">
+                                                            <div class="research-percentage-fill" style="width: {{ $report->hold_percentage ?? 0 }}%"></div>
+                                                        </div>
+                                                        <div class="research-percentage-value">{{ $report->hold_percentage ?? 0 }}%</div>
+                                                    </div>
+                                                    <div class="research-percentage-bar research-percentage-sell">
+                                                        <div class="research-percentage-label">Sell</div>
+                                                        <div class="research-percentage-track">
+                                                            <div class="research-percentage-fill" style="width: {{ $report->sell_percentage ?? 0 }}%"></div>
+                                                        </div>
+                                                        <div class="research-percentage-value">{{ $report->sell_percentage ?? 0 }}%</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     @empty
