@@ -26,7 +26,7 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                                 <div class="footer-widget links-widget">
                                     <div class="widget-title mb_11">
-                                        <figure class="footer-logo"><a href=""><img src="assets/images/logoinvexo.png" alt="" style="height:50px;"></a></figure>
+                                        <figure class="footer-logo"><a href="{{ url('/') }}"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="Invexo" style="height:50px;"></a></figure>
                                     </div>
                                     <div class="widget-content">
                                         At Invexo, we specialize in swing trading and long-term investing. Unlike intraday speculation, our strategies are designed to help investors achieve consistent, sustainable growth.
