@@ -136,9 +136,11 @@
                         </div>
                         <div class="option-block">
                             
-                            <a href="pricing" class="theme-btn btn-one mr_10">Get subscription</a>
+                            <a href="/pricing" class="theme-btn btn-one mr_10">Get subscription</a>
                             @auth
                                 <a href="{{ route('user.dashboard') }}" class="theme-btn btn-one mr_10">Dashboard</a>
+                                <a href="{{ route('user.profile') }}" class="theme-btn btn-one mr_10">Profile</a>
+                                <a href="{{ route('user.research_reports') }}" class="theme-btn btn-one mr_10">Reserch reports</a>
                                 <form method="POST" action="{{ route('user.logout') }}" style="display: inline;">
                                     @csrf
                                     <button type="submit" class="theme-btn btn-two">Logout</button>

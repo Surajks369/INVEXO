@@ -10,11 +10,11 @@ use Illuminate\Support\Str;
 
 class ResearchReportController extends Controller
 {
-    public function download($id, $token)
+    public function download($public_id, $token)
     {
         try {
             // Get the report
-            $report = ResearchReport::where('id', $id)
+            $report = ResearchReport::where('public_id', $public_id)
                                 ->where('status', 1) // Only active reports
                                 ->firstOrFail();
 
@@ -49,7 +49,7 @@ class ResearchReportController extends Controller
         }
     }
 
-    public function show($id)
+    public function show($public_id)
     {
         if (!Auth::check()) {
             return redirect()->route('user.login');
@@ -57,13 +57,11 @@ class ResearchReportController extends Controller
 
         $user = Auth::user();
         $today = now();
-        
-        if (!$user->renewal_date || $user->renewal_date < $today) {
-            return redirect()->route('user.dashboard')
-                ->with('error', 'Your subscription has expired. Please renew to access reports.');
-        }
+        $isActive = $user->renewal_date && $user->renewal_date >= $today;
 
-        $report = ResearchReport::findOrFail($id);
-        return view('research_report_detail', compact('report', 'user'));
+    $report = ResearchReport::where('public_id', $public_id)->firstOrFail();
+
+        // Render the detail view and let the view show subscribe prompt when not active
+        return view('research_report_detail', compact('report', 'user', 'isActive'));
     }
 }

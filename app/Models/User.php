@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'avatar',
         'subscription_type',
         'join_date',
         'renewal_date',

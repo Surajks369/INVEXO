@@ -26,40 +26,15 @@
                     <p>Select the perfect plan that fits your investment goals and budget</p>
                 </div>
                 
-                <div class="row clearfix">
+                <div class="row justify-content-center clearfix">
                     <!-- Free Plan -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
-                        <div class="pricing-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <div class="price-header">
-                                    <h3 style="color:#252525; margin-bottom: 10px;">Free Plan</h3>
-                                    <div class="price-amount">
-                                        <span class="currency">₹</span>
-                                        <span class="amount">0</span>
-                                        <span class="duration">/month</span>
-                                    </div>
-                                </div>
-                                <div class="features-list">
-                                    <ul>
-                                        <li><i class="fas fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Daily highlights (2 lines visible)</li>
-                                        <li><i class="fas fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Blog/insights access</li>
-                                        <li><i class="fas fa-check-circle" style="color: #28a745; margin-right: 8px;"></i>Blurred premium content</li>
-                                        <li style="color: #ccc;"><i class="fas fa-times-circle" style="color: #ccc; margin-right: 8px;"></i>Real-time alerts</li>
-                                        <li style="color: #ccc;"><i class="fas fa-times-circle" style="color: #ccc; margin-right: 8px;"></i>Research reports</li>
-                                    </ul>
-                                </div>
-                                <div class="btn-box">
-                                    <a href="" class="pricing-btn">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <!-- Premium Plan -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                    <div class="col-lg-4 col-md-6 col-sm-12 pricing-block mx-auto">
                         <div class="pricing-block-one premium-plan wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-                                <div class="popular-badge">Most Popular</div>
+                                
                                 <div class="price-header">
                                     <h3 style="color:#28a745; margin-bottom: 10px;">Premium Plan</h3>
                                     <div class="price-toggle mb_20">

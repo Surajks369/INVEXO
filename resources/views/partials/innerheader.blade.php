@@ -116,26 +116,27 @@
         <header class="main-header header-style-three">
             <!-- header-top -->
             <div class="header-top">
-                <div class="outer-container">
+                <div class="large-container">
                     <div class="top-inner">
-                        <div class="option-block">
-                            <div class="support-box">
-                                <div class="icon-box"><i class="icon-07"></i></div>
-                                <a href="tel:966572580280">+91 790 739 5692</a>
-                            </div>
-                             <div class="language-picker js-language-picker ml_40" data-trigger-class="btn btn--subtle">
-                                <form action="index-2.html" class="language-picker__form">
-                                    <label for="language-picker-select">Select your language</label>
-                                    <select name="language-picker-select" id="language-picker-select">
-                                        <option lang="de" value="deutsch"></option>
-                                        <option lang="en" value="english" selected></option>
-                                        <option lang="fr" value="francais"></option>
-                                        <option lang="it" value="italiano"></option>
-                                    </select>
-                                </form>
-                            </div>
+                        <div class="support-box">
+                            <div class="icon-box"><i class="icon-07"></i></div>
+                            <a href="tel:966572580280">+91 790 739 5692</a>
                         </div>
-                        
+                        <div class="option-block">
+                            
+                            <a href="/pricing" class="theme-btn btn-one mr_10">Get subscription</a>
+                            @auth
+                                <a href="{{ route('user.dashboard') }}" class="theme-btn btn-one mr_10">Dashboard</a>
+                                <a href="{{ route('user.profile') }}" class="theme-btn btn-one mr_10">Profile</a>
+                                <a href="{{ route('user.research_reports') }}" class="theme-btn btn-one mr_10">Reserch reports</a>
+                                <form method="POST" action="{{ route('user.logout') }}" style="display: inline;">
+                                    @csrf
+                                    <button type="submit" class="theme-btn btn-one mr_10">Logout</button>
+                                </form>
+                            @else
+                                <a href="{{ route('user.login') }}" class="theme-btn btn-one mr_10">Login</a>
+                            @endauth
+                        </div>
                     </div>
                 </div>
             </div>
@@ -171,7 +172,7 @@
                         </div>
                         <div class="menu-right-content">
                             <div class="search-btn mr_25"><button class="search-toggler"><i class="icon-10"></i></button></div>
-                            <div class="btn-box"><a href="pricing" class="theme-btn btn-one">Get subscription</a></div>
+                            
                         </div>
                     </div>
                 </div>

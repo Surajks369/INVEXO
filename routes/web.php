@@ -45,11 +45,16 @@ Route::post('/user-logout', [FrontLoginController::class, 'logout'])->name('user
 // Protected user routes
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [FrontLoginController::class, 'dashboard'])->name('user.dashboard');
-    Route::get('/research-report/{id}', [App\Http\Controllers\ResearchReportController::class, 'show'])->name('research.report.detail');
+    Route::get('/user/research-reports', [FrontLoginController::class, 'researchReports'])->name('user.research_reports');
+    Route::get('/research-report/{public_id}', [App\Http\Controllers\ResearchReportController::class, 'show'])->name('research.report.detail');
+    // User profile routes
+    Route::get('/profile', [FrontLoginController::class, 'profile'])->name('user.profile');
+    Route::get('/profile/edit', [FrontLoginController::class, 'editProfile'])->name('user.profile.edit');
+    Route::put('/profile', [FrontLoginController::class, 'updateProfile'])->name('user.profile.update');
 });
 
 // Public download route (no auth required)
-Route::get('/research-report/download/{id}/{token}', [App\Http\Controllers\ResearchReportController::class, 'download'])
+Route::get('/research-report/download/{public_id}/{token}', [App\Http\Controllers\ResearchReportController::class, 'download'])
     ->name('research.report.download')
     ->where('token', '[A-Za-z0-9]+');
 

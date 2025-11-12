@@ -55,15 +55,7 @@
                         <i class="flaticon-left-arrow"></i>
                         <span>Back to Dashboard</span>
                     </a>
-                    <div class="logout-btn">
-                        <form method="POST" action="{{ route('user.logout') }}">
-                            @csrf
-                            <button type="submit" class="theme-btn btn-logout">
-                                <i class="flaticon-logout"></i>
-                                <span>Logout</span>
-                            </button>
-                        </form>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -71,63 +63,76 @@
         <!-- Report Content -->
         <div class="row">
             <div class="col-lg-8 col-md-12">
-                <div class="report-detail-card">
-                    <div class="report-header">
-                        <h2>{{ $report->name }}</h2>
-                        <div class="report-meta">
-                            <span class="report-date">
-                                <i class="flaticon-calendar"></i>
-                                {{ $report->created_at->format('M d, Y') }}
-                            </span>
-                            <span class="report-category">
-                                <i class="flaticon-folder"></i>
-                                Category {{ $report->category }}
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="report-content">
-                        @if($report->description)
-                            <div class="report-description">
-                                <h4>Report Overview</h4>
-                                <p>{{ $report->description }}</p>
-                            </div>
-                        @endif
-
-                        <div class="report-recommendations">
-                            <h4>Recommendations</h4>
-                            @include('partials.percentage_bars')
-
-                        <div class="report-file">
-                            <h4>Download Report</h4>
-                            <div class="file-download">
-                                <div class="file-icon">
-                                    <i class="flaticon-pdf"></i>
-                                </div>
-                                <div class="file-info">
-                                    <h5>{{ $report->report }}</h5>
-                                    <p>PDF Document</p>
-                                </div>
-                                <div class="download-btn">
-                                    <a href="#" class="theme-btn btn-one">
-                                        <i class="flaticon-download"></i>
-                                        <span>Download</span>
-                                    </a>
-                                </div>
+                @if(isset($isActive) && $isActive)
+                    <div class="report-detail-card">
+                        <div class="report-header">
+                            <h2>{{ $report->name }}</h2>
+                            <div class="report-meta">
+                                <span class="report-date">
+                                    <i class="flaticon-calendar"></i>
+                                    {{ $report->created_at->format('M d, Y') }}
+                                </span>
+                                <span class="report-category">
+                                    <i class="flaticon-folder"></i>
+                                    Category {{ $report->category }}
+                                </span>
                             </div>
                         </div>
 
-                        <div class="report-summary">
-                            <h4>Key Highlights</h4>
-                            <ul class="highlights-list">
-                                <li><i class="flaticon-check"></i> Comprehensive market analysis</li>
-                                <li><i class="flaticon-check"></i> Expert insights and recommendations</li>
-                                <li><i class="flaticon-check"></i> Data-driven investment strategies</li>
-                                <li><i class="flaticon-check"></i> Risk assessment and mitigation</li>
-                            </ul>
+                        <div class="report-content">
+                            @if($report->company_logo)
+                                <div class="mb-3">
+                                    <img src="{{ asset('storage/'.$report->company_logo) }}" alt="{{ $report->name }}" style="width:100%;max-height:260px;object-fit:contain;border-radius:8px;border:1px solid #eef2f7;padding:12px;background:#fff;" />
+                                </div>
+                            @endif
+
+                            <div class="report-summary-top mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h3 class="mb-1">{{ $report->name }}</h3>
+                                        <div class="text-muted">Code: <strong>{{ $report->nse_code }}</strong></div>
+                                        <div class="text-muted">Recommendation: <strong>{{ $report->recommendation }}</strong></div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div><small class="text-muted">Current Price</small></div>
+                                        <div class="h5">₹{{ number_format($report->current_price, 2) }}</div>
+                                        <div class="mt-2"><small class="text-muted">Target</small></div>
+                                        <div class="h5">₹{{ number_format($report->target_price, 2) }}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @if($report->description)
+                                <div class="report-description">
+                                    <h4>Report Overview</h4>
+                                    <p>{{ $report->description }}</p>
+                                </div>
+                            @endif
+
+                            <div class="report-recommendations">
+                                <h4>Recommendations</h4>
+                                @include('partials.percentage_bars', ['report' => $report])
+                            </div>
+
+                            
+
+                            <div class="report-summary">
+                                <h4>Key Highlights</h4>
+                                <ul class="highlights-list">
+                                    <li><i class="flaticon-check"></i> Comprehensive market analysis</li>
+                                    <li><i class="flaticon-check"></i> Expert insights and recommendations</li>
+                                    <li><i class="flaticon-check"></i> Data-driven investment strategies</li>
+                                    <li><i class="flaticon-check"></i> Risk assessment and mitigation</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @else
+                    <div class="alert alert-warning">
+                        Please subscribe for getting reserch report
+                        <a href="{{ route('pricing') }}" class="theme-btn btn-one ml_10">Subscribe</a>
+                    </div>
+                @endif
             </div>
 
             <div class="col-lg-4 col-md-12">
@@ -157,7 +162,7 @@
                                 <div class="related-item">
                                     <h6>{{ $related->name }}</h6>
                                     <p>{{ $related->created_at->format('M d, Y') }}</p>
-                                    <a href="{{ route('research.report.detail', $related->id) }}">View Report</a>
+                                    <a href="{{ route('research.report.detail', $related->public_id) }}">View Report</a>
                                 </div>
                             @endforeach
                         </div>
