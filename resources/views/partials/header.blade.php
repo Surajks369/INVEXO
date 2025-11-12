@@ -138,15 +138,25 @@
                             
                             <a href="/pricing" class="theme-btn btn-one mr_10">Get subscription</a>
                             @auth
-                                <a href="{{ route('user.dashboard') }}" class="theme-btn btn-one mr_10">Dashboard</a>
-                                <a href="{{ route('user.profile') }}" class="theme-btn btn-one mr_10">Profile</a>
-                                <a href="{{ route('user.research_reports') }}" class="theme-btn btn-one mr_10">Reserch reports</a>
-                                <form method="POST" action="{{ route('user.logout') }}" style="display: inline;">
-                                    @csrf
-                                    <button type="submit" class="theme-btn btn-two">Logout</button>
-                                </form>
+                                @if(Route::has('user.dashboard'))
+                                    <a href="{{ route('user.dashboard') }}" class="theme-btn btn-one mr_10">Dashboard</a>
+                                @endif
+                                @if(Route::has('user.profile'))
+                                    <a href="{{ route('user.profile') }}" class="theme-btn btn-one mr_10">Profile</a>
+                                @endif
+                                @if(Route::has('user.research_reports'))
+                                    <a href="{{ route('user.research_reports') }}" class="theme-btn btn-one mr_10">Reserch reports</a>
+                                @endif
+                                @if(Route::has('user.logout'))
+                                    <form method="POST" action="{{ route('user.logout') }}" style="display: inline;">
+                                        @csrf
+                                        <button type="submit" class="theme-btn btn-two">Logout</button>
+                                    </form>
+                                @endif
                             @else
-                                <a href="{{ route('user.login') }}" class="theme-btn btn-two">Login</a>
+                                @if(Route::has('user.login'))
+                                    <a href="{{ route('user.login') }}" class="theme-btn btn-two">Login</a>
+                                @endif
                             @endauth
                         </div>
                     </div>
