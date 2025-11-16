@@ -69,7 +69,7 @@
                             <h2>Create Account</h2>
                             <p>Join Invexo to access premium investment insights</p>
                         </div>
-                        <form method="POST" action="{{ route('user.register.submit') }}" id="register-form" class="login-form">
+                        <form method="POST" action="{{ Route::has('user.register.submit') ? route('user.register.submit') : url('/user-register') }}" id="register-form" class="login-form">
                             @csrf
                             <div class="form-group">
                                 <label>Full Name <span>*</span></label>
@@ -107,7 +107,7 @@
                                 </button>
                             </div>
                             <div class="text-center mt_20">
-                                <p>Already have an account? <a href="{{ route('user.login') }}" class="text-primary fw-bold">Sign In</a></p>
+                                <p>Already have an account? <a href="{{ Route::has('user.login') ? route('user.login') : url('/user-login') }}" class="text-primary fw-bold">Sign In</a></p>
                             </div>
                         </form>
                     </div>
