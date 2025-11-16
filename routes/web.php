@@ -40,6 +40,8 @@ Route::get('/privacy-policy', function () {
 // Frontend login routes (user)
 Route::get('/user-login', [FrontLoginController::class, 'showLoginForm'])->name('user.login');
 Route::post('/user-login', [FrontLoginController::class, 'login'])->name('user.login.submit');
+Route::get('/user-register', [FrontLoginController::class, 'showRegisterForm'])->name('user.register');
+Route::post('/user-register', [FrontLoginController::class, 'register'])->name('user.register.submit');
 Route::post('/user-logout', [FrontLoginController::class, 'logout'])->name('user.logout');
 
 // Protected user routes

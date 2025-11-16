@@ -32,17 +32,17 @@
     <div class="pattern-layer rotate-me" style="background-image: url({{ asset('assets/images/shape/shape-34.png') }});"></div>
     <div class="auto-container">
         <div class="content-box">
-            <h1>Login</h1>
+            <h1>Register</h1>
             <ul class="bread-crumb clearfix">
                 <li><a href="{{ url('/') }}">Home</a></li>
-                <li>Login</li>
+                <li>Register</li>
             </ul>
         </div>
     </div>
 </section>
 <!-- page-title end -->
 
-<!-- login-section -->
+<!-- register-section -->
 <section class="contact-section pt_90 pb_100">
     <div class="auto-container">
         <div class="form-inner pb_70">
@@ -61,15 +61,23 @@
                     {{ session('success') }}
                 </div>
             @endif
+
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col-sm-10">
                     <div class="login-card">
                         <div class="login-header text-center">
-                            <h2>Welcome Back</h2>
-                            <p>Please sign in to your account</p>
+                            <h2>Create Account</h2>
+                            <p>Join Invexo to access premium investment insights</p>
                         </div>
-                        <form method="POST" action="{{ route('user.login.submit') }}" id="login-form" class="login-form">
+                        <form method="POST" action="{{ route('user.register.submit') }}" id="register-form" class="login-form">
                             @csrf
+                            <div class="form-group">
+                                <label>Full Name <span>*</span></label>
+                                <div class="input-group">
+                                    <span class="input-icon"><i class="flaticon-user"></i></span>
+                                    <input type="text" name="name" placeholder="Enter your full name" required value="{{ old('name') }}">
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label>Email Address <span>*</span></label>
                                 <div class="input-group">
@@ -83,15 +91,23 @@
                                     <span class="input-icon"><i class="flaticon-lock"></i></span>
                                     <input type="password" name="password" placeholder="Enter your password" required>
                                 </div>
+                                <small class="form-text text-muted">Password must be at least 8 characters</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password <span>*</span></label>
+                                <div class="input-group">
+                                    <span class="input-icon"><i class="flaticon-lock"></i></span>
+                                    <input type="password" name="password_confirmation" placeholder="Confirm your password" required>
+                                </div>
                             </div>
                             <div class="form-group message-btn">
                                 <button type="submit" class="theme-btn btn-one">
-                                    <span>Sign In</span>
+                                    <span>Create Account</span>
                                     <i class="flaticon-right-arrow"></i>
                                 </button>
                             </div>
                             <div class="text-center mt_20">
-                                <p>Don't have an account? <a href="{{ route('user.register') }}" class="text-primary fw-bold">Register Now</a></p>
+                                <p>Already have an account? <a href="{{ route('user.login') }}" class="text-primary fw-bold">Sign In</a></p>
                             </div>
                         </form>
                     </div>
@@ -100,6 +116,6 @@
         </div>
     </div>
 </section>
-<!-- login-section end -->
+<!-- register-section end -->
 
 @include('partials.innerfooter')

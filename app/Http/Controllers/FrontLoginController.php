@@ -15,6 +15,32 @@ class FrontLoginController extends Controller
         return view('frontend_login');
     }
 
+    // Show the user registration form (GET /user-register)
+    public function showRegisterForm()
+    {
+        return view('frontend_register');
+    }
+
+    // Handle user registration (POST /user-register)
+    public function register(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+
+        $user = \App\Models\User::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'password' => Hash::make($validated['password']),
+            'status' => 0, // inactive
+            'join_date' => now(),
+        ]);
+
+        return redirect()->route('user.login')->with('success', 'Registration successful! Please wait for admin approval to activate your account.');
+    }
+
     // Handle user login (POST /user-login)
     public function login(Request $request)
     {
