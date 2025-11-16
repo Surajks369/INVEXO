@@ -91,7 +91,7 @@
                                 </button>
                             </div>
                             <div class="text-center mt_20">
-                                <p>Don't have an account? <a href="{{ route('user.register') }}" class="text-primary fw-bold">Register Now</a></p>
+                                <p>Don't have an account? <a href="{{ Route::has('user.register') ? route('user.register') : url('/user-register') }}" class="text-primary fw-bold">Register Now</a></p>
                             </div>
                         </form>
                     </div>
