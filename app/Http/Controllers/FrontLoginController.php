@@ -34,11 +34,11 @@ class FrontLoginController extends Controller
             'name' => $validated['name'],
             'email' => $validated['email'],
             'password' => Hash::make($validated['password']),
-            'status' => 0, // inactive
+            'status' => 1, // active
             'join_date' => now(),
         ]);
 
-        return redirect()->route('user.login')->with('success', 'Registration successful! Please wait for admin approval to activate your account.');
+        return redirect()->route('user.login')->with('success', 'Registration successful! Please login your account for access research reports');
     }
 
     // Handle user login (POST /user-login)
