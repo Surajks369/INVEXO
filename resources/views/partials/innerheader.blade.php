@@ -92,13 +92,13 @@
         <div id="search-popup" class="search-popup">
             <div class="popup-inner">
                 <div class="upper-box">
-                    <figure class="logo-box p_relative z_1"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;width:100px;"></a></figure>
+                    <figure class="logo-box p_relative z_1"><a href="/"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;width:100px;"></a></figure>
                     <div class="close-search"><i class="fal fa-times"></i></div>
                 </div>
                 <div class="overlay-layer"></div>
                 <div class="auto-container">
                     <div class="search-form">
-                        <form method="post" action="index.html">
+                        <form method="post" action="\">
                             <div class="form-group">
                                 <fieldset>
                                     <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required >
@@ -170,7 +170,7 @@
             <div class="header-lower">
                 <div class="outer-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;"></a></figure>
+                        <figure class="logo-box"><a href="/"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <!--Mobile Navigation Toggler-->
                             <div class="mobile-nav-toggler">
@@ -208,7 +208,7 @@
             <div class="sticky-header">
                 <div class="large-container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;"></a></figure>
+                        <figure class="logo-box"><a href="/"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="" style="height:50px;"></a></figure>
                         <div class="menu-area">
                             <nav class="main-menu clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->
@@ -216,7 +216,7 @@
                         </div>
                         <div class="menu-right-content">
                             <div class="search-btn mr_25"><button class="search-toggler"><i class="icon-10"></i></button></div>
-                            <div class="btn-box"><a href="index-2.html" class="theme-btn btn-one">Open Account</a></div>
+                            
                         </div>
                     </div>
                 </div>
