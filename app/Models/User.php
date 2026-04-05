@@ -48,4 +48,12 @@ class User extends Authenticatable
         'join_date' => 'date',
         'renewal_date' => 'date',
     ];
+
+    /**
+     * Get the payments for the user.
+     */
+    public function payments()
+    {
+        return $this->hasMany(Payment::class);
+    }
 }

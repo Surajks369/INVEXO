@@ -2,6 +2,7 @@
 use App\Http\Controllers\FrontLoginController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\Admin\CryptoIdeaController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\NotificationController;
@@ -33,6 +34,16 @@ Route::get('/pricing', function () {
     return view('pricing');
 })->name('pricing');
 
+// Diagnostic page (REMOVE in production)
+Route::get('/diagnostic', function () {
+    return view('diagnostic');
+})->name('diagnostic');
+
+// Test payment page (REMOVE in production)
+Route::get('/test-payment', function () {
+    return view('test-payment');
+})->name('test.payment');
+
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 })->name('privacy-policy');
@@ -53,6 +64,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [FrontLoginController::class, 'profile'])->name('user.profile');
     Route::get('/profile/edit', [FrontLoginController::class, 'editProfile'])->name('user.profile.edit');
     Route::put('/profile', [FrontLoginController::class, 'updateProfile'])->name('user.profile.update');
+    
+    // Payment routes
+    Route::get('/checkout', [PaymentController::class, 'checkout'])->name('payment.checkout');
+    Route::post('/payment/create-order', [PaymentController::class, 'createOrder'])->name('payment.create-order');
+    Route::post('/payment/verify', [PaymentController::class, 'verifyPayment'])->name('payment.verify');
+    Route::get('/payment/success/{payment}', [PaymentController::class, 'success'])->name('payment.success');
+    Route::get('/payment/failed', [PaymentController::class, 'failed'])->name('payment.failed');
 });
 
 // Public download route (no auth required)

@@ -62,7 +62,7 @@
                                     </ul>
                                 </div>
                                 <div class="btn-box">
-                                    <a href="" class="pricing-btn premium">Subscribe Now</a>
+                                    <a href="#" class="pricing-btn premium subscribe-btn" data-plan="annual">Subscribe Now</a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                         Start your journey towards smarter investments and consistent returns today.
                     </p>
                     <div class="btn-box">
-                        <a href="" class="cta-btn">Subscribe Now</a>
+                        <a href="#" class="cta-btn subscribe-btn" data-plan="annual">Subscribe Now</a>
                         <a href="{{ route('services') }}" class="cta-btn" style="margin-left: 15px;">View Services</a>
                     </div>
                 </div>
@@ -273,9 +273,12 @@
 
     <script>
         // Price toggle functionality
+        let currentPlan = 'annual';
+        
         document.querySelectorAll('.toggle-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const plan = this.getAttribute('data-plan');
+                currentPlan = plan;
                 const toggleBtns = this.parentElement.querySelectorAll('.toggle-btn');
                 
                 // Remove active class from all buttons
@@ -292,6 +295,27 @@
                     document.getElementById('annual-price').style.display = 'none';
                     document.getElementById('quarterly-price').style.display = 'block';
                 }
+                
+                // Update subscribe buttons
+                document.querySelectorAll('.subscribe-btn').forEach(btn => {
+                    btn.setAttribute('data-plan', plan);
+                });
+            });
+        });
+        
+        // Subscribe button functionality
+        document.querySelectorAll('.subscribe-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const plan = this.getAttribute('data-plan');
+                
+                // Check if user is logged in
+                @auth
+                    window.location.href = '{{ route('payment.checkout') }}?plan=' + plan;
+                @else
+                    // Redirect to login with return URL
+                    window.location.href = '{{ route('user.login') }}?redirect=' + encodeURIComponent('{{ route('payment.checkout') }}?plan=' + plan);
+                @endauth
             });
         });
     </script>
