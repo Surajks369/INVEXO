@@ -1,0 +1,57 @@
+# .env Configuration for AWS Server
+# Copy these lines and add to your .env file on AWS server
+
+# ===================================
+# RAZORPAY PAYMENT GATEWAY
+# ===================================
+
+# Test Mode (for testing)
+RAZORPAY_KEY=rzp_test_SZi9RCIS5HRQgK
+RAZORPAY_SECRET=P58GubFgfe0yhC4VhSRmmqOc
+
+# Production Mode (when going live - replace with your live keys)
+# RAZORPAY_KEY=rzp_live_YOUR_LIVE_KEY_HERE
+# RAZORPAY_SECRET=YOUR_LIVE_SECRET_HERE
+
+# ===================================
+# INSTRUCTIONS
+# ===================================
+
+# 1. SSH into your AWS server
+# 2. Navigate to your Laravel project: cd /path/to/laravel
+# 3. Edit .env file: nano .env (or vi .env)
+# 4. Add the RAZORPAY_KEY and RAZORPAY_SECRET lines above
+# 5. Save and exit (Ctrl+X, then Y, then Enter)
+# 6. Clear config cache: php artisan config:clear
+
+# ===================================
+# SECURITY NOTES
+# ===================================
+
+# ⚠️  NEVER commit .env file to git
+# ⚠️  Use test keys for testing/staging
+# ⚠️  Use live keys only on production
+# ⚠️  Keep your Razorpay secret safe
+# ⚠️  Set file permissions: chmod 600 .env
+
+# ===================================
+# GET RAZORPAY KEYS
+# ===================================
+
+# 1. Login to https://dashboard.razorpay.com/
+# 2. Go to Settings → API Keys
+# 3. For Test Mode: Toggle to "Test Mode" and copy keys
+# 4. For Live Mode: Toggle to "Live Mode" and generate keys
+# 5. Copy Key ID (starts with rzp_test_ or rzp_live_)
+# 6. Copy Key Secret (click "Show Secret")
+
+# ===================================
+# VERIFY CONFIGURATION
+# ===================================
+
+# After adding to .env, verify with:
+# php artisan tinker
+# >>> config('services.razorpay.key')
+# Should return: "rzp_test_SZi9RCIS5HRQgK"
+
+# ===================================
