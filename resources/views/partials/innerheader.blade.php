@@ -188,7 +188,7 @@
                                         <li class="dropdown"><a href="{{ route('about') }}">About Us</a>
                                             
                                         </li>
-                                        <li><a href="{{ route('services') }}">Services</a></li>
+                                        <!--<li><a href="{{ route('services') }}">Services</a></li>-->
                                         <li><a href="{{ route('pricing') }}">Pricing</a></li> 
                                         
                                         <li class="current"><a href="contact.html">Contact</a></li> 

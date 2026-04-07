@@ -29,7 +29,7 @@
                                     <h2>About Invexo</h2>
                                 </div>
                                 <p class="intro-text mb_30" style="font-size: 16px; line-height: 1.8; color: #666;">
-                                    At Invexo, we specialize in swing trading and long-term investing. Unlike intraday speculation, our strategies are designed to help investors achieve consistent, sustainable growth.
+                                    At Invexo, we provide structured market insights and real-time observations to help individuals better understand stock market movements.
                                 </p>
                                 
                                 <!-- Mission & Vision -->
@@ -41,7 +41,7 @@
                                             </div>
                                             <h4 style="color: #252525; margin-bottom: 10px;">Our Mission</h4>
                                             <p style="font-size: 14px; line-height: 1.6; color: #777;">
-                                                To empower Indian investors with reliable swing trading and long-term investment insights.
+                                                To empower individuals with clear market understanding through research-based insights and practical analysis, enabling them to independently interpret market movements and make well-informed financial decisions.
                                             </p>
                                         </div>
                                     </div>
@@ -52,7 +52,7 @@
                                             </div>
                                             <h4 style="color: #252525; margin-bottom: 10px;">Our Vision</h4>
                                             <p style="font-size: 14px; line-height: 1.6; color: #777;">
-                                                To become India's most trusted platform for sustainable wealth creation.
+                                                To build a reliable and transparent ecosystem where individuals can enhance their market knowledge, develop analytical thinking, and make independent financial decisions with confidence.
                                             </p>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
         <!-- about-section end -->
 
         <!-- Core Strengths Section -->
-        <section class="account-section pt_100 pb_70">
+        <!--<section class="account-section pt_100 pb_70">
             <div class="pattern-layer" style="background-image: url({{ asset('assets/images/shape/shape-1.png') }});"></div>
             <div class="auto-container">
                 <div class="sec-title pb_60 centred">
@@ -134,11 +134,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Core Strengths Section end -->
 
         <!-- call to action section -->
-        <section class="cta-section centred pt_80 pb_80" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
+        <!--<section class="cta-section centred pt_80 pb_80" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
             <div class="auto-container">
                 <div class="content-box">
                     <h2 style="color: #fff; margin-bottom: 20px;">Ready to Start Your Investment Journey?</h2>
@@ -171,7 +171,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- call to action section end -->
 
 @include('partials.innerfooter')

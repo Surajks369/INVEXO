@@ -205,9 +205,9 @@
                                 <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
                                     <i class="fas fa-chart-line" style="font-size: 36px; color: #fff;"></i>
                                 </div>
-                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Swing Trading Advisory</a></h3>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Market Learning – Swing Trading Concepts</a></h3>
                                 <p style="color:#333;">
-                                    Timed buy/sell recommendations for short- to medium-term opportunities. Get precise entry and exit points for optimal trading results.
+                                    Learn swing trading strategies through structured educational content and real-market case studies. Understand entry and exit concepts for better market awareness.
                                 </p>
                             </div>
                         </div>
@@ -218,8 +218,8 @@
                                 <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
                                     <i class="fab fa-bitcoin" style="font-size: 36px; color: #fff;"></i>
                                 </div>
-                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Crypto Insights</a></h3>
-                                <p style="color:#333;">Swing and long-hold signals for Bitcoin, Ethereum, and major altcoins. Navigate the crypto market with confidence and expert guidance.</p>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Crypto Market Education</a></h3>
+                                <p style="color:#333;">Understand cryptocurrency market behavior, trends, and price movements through educational insights and analysis examples.</p>
                             </div>
                         </div>
                     </div>
@@ -229,8 +229,8 @@
                                 <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
                                     <i class="fas fa-bell" style="font-size: 36px; color: #fff;"></i>
                                 </div>
-                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Real-Time Alerts</a></h3>
-                                <p style="color:#333;">Get notified instantly when opportunities arise. Never miss a profitable trade with our timely alert system delivered to your device.</p>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Market Updates & Learning Notifications</a></h3>
+                                <p style="color:#333;">Receive educational updates and market observations to stay informed about ongoing trends and learning opportunities.</p>
                             </div>
                         </div>
                     </div>
@@ -240,9 +240,19 @@
                                 <div class="icon-box" style="background:#28a745; border-radius:50%; width:70px; height:70px; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto;">
                                     <i class="fas fa-shield-alt" style="font-size: 36px; color: #fff;"></i>
                                 </div>
-                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Trusted Research</a></h3>
-                                <p style="color:#333;">Transparent, research-backed, unbiased analysis. Our recommendations are based on thorough market research and proven strategies.</p>
+                                <h3 style="color:#28a745;"><a href="#" style="color:#28a745;">Research-Based Learning</a></h3>
+                                <p style="color:#333;">Access structured market research and case studies designed purely for educational purposes to improve your market understanding.</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix mt_50">
+                    <div class="col-12">
+                        <div class="disclaimer-box" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 5px solid #28a745; padding: 25px 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <p style="margin: 0; color: #495057; font-size: 15px; line-height: 1.8; text-align: justify;">
+                                <strong style="color: #28a745; font-size: 16px;">Disclaimer:</strong> 
+                                Invexo is an educational platform. We do not provide any investment advice, stock recommendations, or buy/sell signals. All content shared is for educational and informational purposes only.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -271,18 +281,15 @@
                                         <div class="acc-content current">
                                             <div class="content">
                                                 <p>
-                                                    At Invexo, we are passionate about empowering individuals to grow their wealth with confidence.</p>
-&nbsp;<p>Founded with the vision of making smart investing simple and accessible, Invexo is a modern investment advisory platform that provides research-driven insights, strategies, and tools tailored for today’s dynamic stock market.</p>
-&nbsp;
-<p>Our focus is on swing trading opportunities, where precision, timing, and disciplined strategies matter the most. With a blend of market expertise, advanced analytics, and a client-first approach, we guide our subscribers toward making informed decisions and maximizing their returns.</p>
-&nbsp;
-<p>At Invexo, we believe investing is not just about numbers—it’s about building trust, achieving financial freedom, and creating long-term value for our clients.</p>
+                                                    At Invexo, we provide structured market insights and real-time observations to help individuals better understand stock market movements.
+Our platform focuses on identifying potential market scenarios based on technical and analytical frameworks. These insights are shared for informational purposes, enabling users to study market behavior and make their own independent decisions.
+We emphasize disciplined trading approaches, risk awareness, and personal responsibility in all market activities.
 &nbsp;
 <p style="color: #28a745;"><strong>Our Mission</strong></p>
-<p>To simplify stock market investing and deliver actionable strategies that help individuals confidently grow their portfolios.</p>
+<p>To empower individuals with clear market understanding through research-based insights and practical analysis, enabling them to independently interpret market movements and make well-informed financial decisions.</p>
 &nbsp;
 <p style="color: #28a745;"><strong> Our Vision</strong></p>
-<p>To be the most trusted partner for retail investors by combining technology, knowledge, and transparency in every step of the investment journey.</p>
+<p>To build a reliable and transparent ecosystem where individuals can enhance their market knowledge, develop analytical thinking, and make independent financial decisions with confidence.</p>
                                                 </p>
                                             </div>
                                         </div>
@@ -295,27 +302,27 @@
                                         <div class="acc-content">
                                             <div class="content">
                                                 <p>
-                                                    At Invexo, we specialize in guiding investors through the fast-moving world of the stock market with clarity and confidence.</p>
-&nbsp;<p>Our core expertise lies in swing trading strategies, where we identify short-to-medium-term opportunities that balance risk and reward.</p>
+                                                    At Invexo, we focus on helping individuals understand the fast-moving stock market with clarity and confidence through structured market insights and analytical perspectives.</p>
+&nbsp;<p>Our core focus is on swing trading concepts, where we highlight short- to medium-term market movements and scenarios to help users better understand how timing, structure, and risk management play a role in trading.</p>
 &nbsp;
-<p><h4>Here’s how we help our clients</h4></p>
+<p><h4>Here’s how we support our users</h4></p>
 
 <p style="color: #28a745;"><strong>Market Research & Insights</strong>></p>
-<p>We provide clear, research-backed analysis of market trends, sectors, and stocks with the highest potential.</p>
+<p>We share research-based market observations, including trends, sectors, and stock movements, to help users interpret market behavior more effectively.</p>
 &nbsp;
-<p style="color: #28a745;"><strong>Actionable Swing Trading Strategies</strong></p>
-<p>Our team identifies entry and exit points designed to maximize gains and minimize risks.</p>
+<p style="color: #28a745;"><strong>Swing Trading Concepts & Setups</strong></p>
+<p>We highlight potential market setups and price zones based on technical analysis frameworks to help users study how entry and exit conditions may form in different scenarios.</p>
 &nbsp;
-<p style="color: #28a745;"><strong>Easy-to-Follow Advisory Plans</strong></p>
-<p>We offer subscription-based investment advice that is simple, practical, and tailored for both beginners and experienced investors.</p>
+<p style="color: #28a745;"><strong>Structured Learning Approach</strong></p>
+<p>Our subscription provides access to organized insights and market observations designed to simplify complex trading concepts for both beginners and experienced participants.</p>
 &nbsp;
-<p style="color: #28a745;"><strong>Education & Guidance</strong></p>
-<p>We don’t just give recommendations — we empower our clients with the knowledge to understand the why behind each trade.</p>
+<p style="color: #28a745;"><strong>Understanding Market Behavior</strong></p>
+<p>We aim to help users understand the reasoning behind market movements through practical examples and structured analysis.</p>
 &nbsp;
-<p style="color: #28a745;"><strong>Trust & Transparency</strong></p>
-<p>Every recommendation is backed by data-driven insights, ensuring full transparency in our approach.</p>
+<p style="color: #28a745;"><strong>Transparency & Clarity</strong></p>
+<p>All insights are based on analytical frameworks and are shared to improve market understanding in a transparent manner.</p>
 &nbsp;
-<p>At Invexo, our mission is to make investing smarter, simpler, and more rewarding — helping you take confident steps toward your financial goals.</p>
+<p>At Invexo, our goal is to make market understanding simpler and more accessible, enabling individuals to build confidence in interpreting market movements and making their own independent decisions.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -327,21 +334,21 @@
                                         <div class="acc-content">
                                             <div class="content">
                                                 <p>
-                                                    We’ve designed Invexo to be simple, transparent, and effective — so you can focus on growing your wealth without confusion.</p>
+                                                    We’ve designed Invexo to be simple, transparent, and easy to follow — helping you understand market movements with clarity.</p>
 &nbsp;
 <p style="color: #28a745;"><strong>1. Subscribe to a Plan</strong></p>
-<p>Choose the subscription that fits your investing style. Whether you’re just starting or already experienced, we have plans tailored for you.</p>
+<p>Choose a subscription that suits your learning needs. Our plans are designed to provide structured access to market insights and analytical perspectives for all levels of experience.</p>
 &nbsp;
-<p style="color: #28a745;"><strong>2. Get Market Insights & Alerts</strong></p>
-<p>Receive our expert swing trading recommendations directly — complete with stock picks, entry/exit levels, and market updates.</p>
+<p style="color: #28a745;"><strong>2. Receive Market Insights & Updates</strong></p>
+<p>Get timely market observations, analytical insights, and structured updates based on ongoing market movements and trends.</p>
 &nbsp;
-<p style="color: #28a745;"><strong>3. Take Action with Confidence</strong></p>
-<p>Use our clear strategies to make informed decisions. Each recommendation is backed by research and risk management principles.</p>
+<p style="color: #28a745;"><strong>3. Understand Market Setups</strong></p>
+<p>Explore how different market scenarios develop through technical analysis and structured frameworks, helping you interpret price movements more effectively.</p>
 &nbsp;
-<p style="color: #28a745;"><strong>4. Track & Grow</strong></p>
-<p>Monitor your trades and see your portfolio grow with consistent, disciplined guidance.</p>
+<p style="color: #28a745;"><strong>4. Apply Your Understanding</strong></p>
+<p>Use the insights and observations to build your own perspective and make independent decisions based on your personal risk profile.</p>
 &nbsp;
-<p>At Invexo, we combine market expertise + data-driven strategies + transparency to make investing easier and more effective for you.</p>
+<p>At Invexo, we combine analytical insights, structured observations, and transparency to make market understanding simpler and more accessible.</p>
                                                 </p>
                                             </div>
                                         </div>
@@ -365,6 +372,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="row clearfix mt_50">
+                    <div class="col-12">
+                        <div class="disclaimer-box" style="background: linear-gradient(135deg, #fff8f0 0%, #fff3e6 100%); border-left: 5px solid #ff8c00; padding: 25px 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <p style="margin: 0; color: #495057; font-size: 15px; line-height: 1.8; text-align: justify;">
+                                <strong style="color: #ff8c00; font-size: 16px;">Disclaimer:</strong> 
+                                Invexo is an educational and informational platform. We do not provide investment advice, stock recommendations, or buy/sell signals. All insights shared are for informational purposes only. Users are solely responsible for their investment decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- about-section end -->
@@ -380,40 +397,40 @@
             <div class="auto-container">
                 <div class="sec-title centred pb_60">
                     <span class="sub-title mb_14">Trading Platforms</span>
-                    <h2>Things We Trade</h2>
+                    <h2>Market Segments We Cover</h2>
                 </div>
                 <div class="inner-container clearfix">
                     
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-2.png') }}" alt=""></figure>
-    <h3><a href="markets-details.html">Trade Advide</a></h3>
-    <p>Helping investors profit from short-term market fluctuations.</p>
-    <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
+    <h3><a href="markets-details.html" style="color: #333;">Market Insights</a></h3>
+    <p style="color: #28a745;">Explore short-term market movements through analytical insights and structured observations designed for informational purposes.</p>
+    <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Explore Insights</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-3.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Crypto</a></h3>
+                            <h3><a href="markets-details.html" style="color: #333;">Crypto Market Insights</a></h3>
                             <p style="color: #28a745;">Making short-term profits from Bitcoin's price fluctuations.</p>
-                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Explore Insights</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-4.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Real Time Alert</a></h3>
+                            <h3><a href="markets-details.html" style="color: #333;">Market Updates</a></h3>
                             <p style="color: #28a745;" >Immediate notifications on key stock market events.</p>
-                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Explore Insights</a></div>
                         </div>
                     </div>
                     <div class="trading-block-one">
                         <div class="inner-box">
 <figure class="image-box"><img src="{{ asset('assets/images/resource/tradingnew-5.png') }}" alt=""></figure>
-                            <h3><a href="markets-details.html">Stock Advice</a></h3>
+                            <h3><a href="markets-details.html" style="color: #333;">Equity Market Analysis</a></h3>
                             <p style="color: #28a745;">Expert guidance for smarter investment decisions.</p>
-                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Start Trading Now</a></div>
+                            <div class="btn-box"><a href="/user-login" class="theme-btn btn-one">Explore Insights</a></div>
                         </div>
                     </div>
                 </div>

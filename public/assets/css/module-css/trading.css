@@ -1,9 +1,10 @@
+/* Text colors for trading blocks */
 .trading-block-one .inner-box p {
-  color: #fff !important;
+  color: #28a745 !important;
 }
-/* Force white color for the 'Helping investors profit from short-term market fluctuations.' text */
-.trading-block-one .inner-box h3:contains('Trade Advide') + p {
-  color: #fff !important;
+
+.trading-block-one .inner-box h3 a {
+  color: #333 !important;
 }
 
 /** trading-section **/
@@ -35,12 +36,14 @@
 
 .trading-block-one .inner-box{
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 29px 30px 40px 30px;
   overflow: hidden;
   border-right: 1px solid #E5E5E5;
   transition: all 500ms ease;
   color: #fff;
+  width: 100%;
 }
 
 .trading-section .inner-container .trading-block-one:last-child .inner-box{
@@ -75,36 +78,35 @@
 
 .trading-block-one .inner-box h3 a{
   display: inline-block;
-  color: var(--title-color);
+  color: #333 !important;
 }
 
 .trading-block-one .inner-box h3 a:hover{
-  color: #fff !important;
+  color: #28a745 !important;
 }
 
 .trading-block-one .inner-box p{
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 120px;
-  opacity: 0;
-  top: 15px;
+  margin-bottom: 20px;
+  opacity: 1;
+  top: 0px;
   transition: all 500ms ease;
+  flex-grow: 1;
 }
 
-.trading-block-one .inner-box:hover p{
-  top: 0px;
-  opacity: 1;
+.trading-block-one .inner-box .btn-box{
+  position: relative;
+  margin-top: auto;
+  padding-bottom: 150px;
+  z-index: 2;
 }
 
 .trading-block-one .inner-box .theme-btn{
   width: 100%;
-  top: 15px;
-  opacity: 0;
-}
-
-.trading-block-one .inner-box:hover .theme-btn{
   top: 0px;
   opacity: 1;
+  position: relative;
 }
 
 .trading-block-one .inner-box .image-box{

@@ -29,7 +29,7 @@
                                         <figure class="footer-logo"><a href="{{ url('/') }}"><img src="{{ asset('assets/images/logoinvexo.png') }}" alt="Invexo" style="height:50px;"></a></figure>
                                     </div>
                                     <div class="widget-content">
-                                        At Invexo, we specialize in swing trading and long-term investing. Unlike intraday speculation, our strategies are designed to help investors achieve consistent, sustainable growth.
+                                        At Invexo, we provide structured market insights and analytical perspectives to help individuals better understand stock market movements. Our focus is on simplifying market concepts through real-time observations and research-based analysis.
                                     </div>
                                 </div>
                             </div>
