@@ -126,8 +126,8 @@
                     <div class="slide-item p_relative">
 <div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-1.png') }});"></div>
                         <div class="content-box">
-                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
-                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
+                            <h2>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</h2>
+                            <p>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</p>
                             <div class="btn-box">
                                 <a href="/user-login" class="theme-btn btn-one">Explore Free Advice</a>
                                 <a href="/pricing" class="theme-btn btn-one">Unlock Premium Now</a>
@@ -137,8 +137,8 @@
                     <div class="slide-item p_relative">
 <div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-2.png') }});"></div>
                         <div class="content-box">
-                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
-                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
+                            <h2>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</h2>
+                            <p>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</p>
                             <div class="btn-box">
                                 <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
                                 <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
@@ -148,8 +148,8 @@
                     <div class="slide-item p_relative">
 <div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-3.png') }});"></div>
                         <div class="content-box">
-                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
-                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
+                            <h2>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</h2>
+                            <p>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</p>
                             <div class="btn-box">
                                 <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
                                 <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
@@ -159,8 +159,8 @@
                     <div class="slide-item p_relative">
 <div class="bg-layer" style="background-image: url({{ asset('assets/images/banner/banner-4.png') }});"></div>
                         <div class="content-box">
-                            <h2>Smarter Swing Trades. Confident Long-Term Investments.</h2>
-                            <p>Invexo delivers premium swing trading and long-term investment insights for Indian investors.</p>
+                            <h2>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</h2>
+                            <p>Smarter Market Insights for Short-Term Analysis and Long-Term Understanding</p>
                             <div class="btn-box">
                                 <a href="index.html" class="theme-btn btn-one">Explore Free Advice</a>
                                 <a href="index.html" class="theme-btn btn-one">Unlock Premium Now</a>
@@ -578,24 +578,24 @@ We emphasize disciplined trading approaches, risk awareness, and personal respon
                                     <div class="inner-box">
                                         <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
                                         <span class="count-text">1</span>
-                                        <h3>Sign up, It's Free!</h3>
-                                        <p>Our team will set up your account and help you build job to  easy-to-use web dashboard.</p>
+                                        <h3>Get Started for Free</h3>
+                                        <p>Register and access a clean, easy-to-use dashboard for market insights and updates.</p>
                                     </div>
                                 </div>
                                 <div class="process-block-one">
                                     <div class="inner-box">
                                         <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
                                         <span class="count-text">2</span>
-                                        <h3>Find best Deals and Invest</h3>
-                                        <p>Create and Trade anywhere from 1-100% openings with just a few clicks. customize your own.</p>
+                                        <h3>Access Insights & Analysis</h3>
+                                        <p>Explore market trends, structured observations, and analytical insights designed to improve your understanding.</p>
                                     </div>
                                 </div>
                                 <div class="process-block-one">
                                     <div class="inner-box">
                                         <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
                                         <span class="count-text">3</span>
-                                        <h3>Get you profit back</h3>
-                                        <p>View market, reviews, and rosters before forex arrive on the site, and post reviews and pay, effortlessly.</p>
+                                        <h3>Build Your Market Understanding</h3>
+                                        <p>Track market movements and develop your own perspective based on insights and observations.</p>
                                     </div>
                                 </div>
                             </div>
