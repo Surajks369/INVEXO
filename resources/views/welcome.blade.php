@@ -248,10 +248,10 @@
                 </div>
                 <div class="row clearfix mt_50">
                     <div class="col-12">
-                        <div class="disclaimer-box" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 5px solid #28a745; padding: 25px 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                            <p style="margin: 0; color: #495057; font-size: 15px; line-height: 1.8; text-align: justify;">
-                                <strong style="color: #28a745; font-size: 16px;">Disclaimer:</strong> 
-                                Invexo is an educational platform. We do not provide any investment advice, stock recommendations, or buy/sell signals. All content shared is for educational and informational purposes only.
+                        <div class="disclaimer-box" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-left: 5px solid #28a745; padding: 15px 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <p style="margin: 0; color: #495057; font-size: 10px; line-height: 1.5; text-align: justify;">
+                                <strong style="color: #28a745; font-size: 11px;">Disclaimer:</strong> 
+                                Invexo provides market insights and trade ideas for educational and information purposes only, as per SEBI guidelines. Investments are subject to market risks. Users should exercise their own judgment.
                             </p>
                         </div>
                     </div>
@@ -374,10 +374,10 @@ We emphasize disciplined trading approaches, risk awareness, and personal respon
                 </div>
                 <div class="row clearfix mt_50">
                     <div class="col-12">
-                        <div class="disclaimer-box" style="background: linear-gradient(135deg, #fff8f0 0%, #fff3e6 100%); border-left: 5px solid #ff8c00; padding: 25px 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                            <p style="margin: 0; color: #495057; font-size: 15px; line-height: 1.8; text-align: justify;">
-                                <strong style="color: #ff8c00; font-size: 16px;">Disclaimer:</strong> 
-                                Invexo is an educational and informational platform. We do not provide investment advice, stock recommendations, or buy/sell signals. All insights shared are for informational purposes only. Users are solely responsible for their investment decisions.
+                        <div class="disclaimer-box" style="background: linear-gradient(135deg, #fff8f0 0%, #fff3e6 100%); border-left: 5px solid #ff8c00; padding: 15px 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <p style="margin: 0; color: #495057; font-size: 10px; line-height: 1.5; text-align: justify;">
+                                <strong style="color: #ff8c00; font-size: 11px;">Disclaimer:</strong> 
+                                Invexo provides market insights and trade ideas for educational and information purposes only, as per SEBI guidelines. Investments are subject to market risks. Users should exercise their own judgment.
                             </p>
                         </div>
                     </div>
